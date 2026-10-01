@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Reddy Tours and Travels - Premium cab booking inspired by Revv & Zoomcar. Mumbai-Pune daily up-down, All India outstation, local hourly packages (8hr/80km, 10hr/100km, 12hr/120km), wedding & corporate fleet, and self-drive cars." />
-  <meta name="keywords" content="Reddy Tours and Travels, Mumbai Pune cab, Revv cab rental, Zoomcar self drive, outstation taxi, corporate cab rental Maharashtra, wedding car rental, Nashik Solapur Kolhapur cab" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="Reddy Tours and Travels - Clean, reliable cab and car rental services inspired by Revv. Mumbai-Pune daily up-down, All India outstation, local hourly packages (8hr/80km, 10hr/100km, 12hr/120km), corporate employee commute, wedding fleet, and self-drive intercity cars." />
+  <meta name="keywords" content="Reddy Tours and Travels, Revv car rental, Zoomcar Mumbai Pune, Mumbai Pune cab booking, outstation taxi Maharashtra, corporate employee cab, wedding car rental, self drive car" />
   <meta name="theme-color" content="#FFC800" />
   <title>Reddy Tours & Travels | Maharashtra's Smart Cab & Car Rental Service</title>
 
@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome 6 -->
+  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-  <!-- Stylesheet -->
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -26,7 +26,7 @@
     <div class="container announcement-inner">
       <div class="announce-left">
         <span class="pulse-tag"><i class="fa-solid fa-bolt"></i> 2026 Special</span>
-        <span>Mumbai ⇄ Pune Regular Express Cabs starting @ <strong>₹1,799/-</strong> Only</span>
+        <span class="announce-text">Mumbai ⇄ Pune Regular Express Cabs starting @ <strong>₹1,799/-</strong> Only</span>
       </div>
       <div class="announce-right">
         <a href="tel:+919860013081" class="quick-link"><i class="fa-solid fa-phone"></i> +91 98600 13081</a>
@@ -36,9 +36,10 @@
     </div>
   </div>
 
-  <!-- ================= MAIN NAVBAR ================= -->
+  <!-- ================= MAIN REVV-STYLE NAVBAR ================= -->
   <header class="revv-nav" id="mainHeader">
     <div class="container nav-content">
+      <!-- Logo -->
       <a href="#home" class="brand-logo">
         <div class="logo-mark">
           <i class="fa-solid fa-car-side"></i>
@@ -49,28 +50,31 @@
         </div>
       </a>
 
+      <!-- Desktop Nav Menu -->
       <nav class="nav-menu" id="navMenu">
         <a href="#booking-engine" class="menu-item active">Book Ride</a>
-        <a href="#services" class="menu-item">Our Services</a>
+        <a href="#routes" class="menu-item">Popular Routes</a>
+        <a href="#services" class="menu-item">Services</a>
         <a href="#packages" class="menu-item">Local Packages</a>
         <a href="#fleet" class="menu-item">Fleet</a>
-        <a href="#routes" class="menu-item">Popular Routes</a>
         <a href="#corporate" class="menu-item">Corporate</a>
         <a href="#reviews" class="menu-item">Reviews</a>
       </nav>
 
+      <!-- Nav Actions -->
       <div class="nav-actions">
         <a href="tel:+919860013081" class="nav-call-pill">
           <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
           <div class="call-txt">
-            <span class="sm-txt">Call for Booking</span>
+            <span class="sm-txt">Direct Booking</span>
             <strong>+91 98600 13081</strong>
           </div>
         </a>
-        <a href="https://wa.me/919860013081?text=Hello%20Reddy%20Tours%2C%20I%20want%20to%20book%20a%20cab%20urgently." target="_blank" class="nav-wa-btn">
+        <a href="https://wa.me/919860013081?text=Hello%20Reddy%20Tours%2C%20I%20want%20to%20book%20a%20cab." target="_blank" class="nav-wa-btn">
           <i class="fa-brands fa-whatsapp"></i>
           <span>Instant WhatsApp</span>
         </a>
+        <!-- Mobile Hamburger Toggle -->
         <button class="nav-toggle" id="menuToggle" aria-label="Toggle Menu">
           <span></span><span></span><span></span>
         </button>
@@ -78,7 +82,10 @@
     </div>
   </header>
 
-  <!-- ================= FLOATING ACTION POPUPS ================= -->
+  <!-- Mobile Overlay Backdrop -->
+  <div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- ================= DESKTOP & TABLET FLOATING BUTTONS ================= -->
   <div class="sticky-speed-dial">
     <a href="https://wa.me/919860013081?text=Hello%20Reddy%20Tours%20%26%20Travels!%20I%20would%20like%20to%20enquire%20about%20your%20services%20and%20rates." target="_blank" class="dial-btn wa-dial" title="Chat on WhatsApp">
       <div class="dial-ping"></div>
@@ -91,7 +98,19 @@
     </a>
   </div>
 
-  <!-- ================= HERO WITH REVV-STYLE SEARCH WIDGET ================= -->
+  <!-- ================= MOBILE STICKY BOTTOM BAR ================= -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919860013081" class="mob-bar-btn call">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919860013081?text=Hello%20Reddy%20Tours%2C%20I%20want%20to%20book%20a%20cab%20now." target="_blank" class="mob-bar-btn whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp Booking</span>
+    </a>
+  </div>
+
+  <!-- ================= HERO SECTION WITH REVV SEARCH WIDGET ================= -->
   <section class="revv-hero" id="home">
     <div class="hero-bg-shapes">
       <div class="shape-circle-yellow"></div>
@@ -99,6 +118,7 @@
     </div>
 
     <div class="container hero-container">
+      <!-- Hero Top Text -->
       <div class="hero-header-text">
         <div class="hero-pill-badge">
           <span class="dot-live"></span> Inspired by Revv & Zoomcar Reliability • Maharashtra's #1 Fleet
@@ -108,8 +128,32 @@
           <span class="highlight-yellow">Mumbai–Pune, Outstation</span> & Local Rentals.
         </h1>
         <p class="hero-subtext">
-          Zero surge pricing • Sanitized AC Cabs • Professional Chauffeurs • Direct WhatsApp Booking
+          Zero surge pricing • Sanitized AC Cabs • Professional Chauffeurs • 100% On-Time Doorstep Pickup
         </p>
+      </div>
+
+      <!-- Hero Visual Image Banner (Revv-style car visual) -->
+      <div class="hero-car-visual-banner">
+        <img 
+          src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80" 
+          alt="Reddy Tours and Travels Premium Car Rental Fleet" 
+          class="hero-car-img" 
+          loading="eager"
+        />
+        <div class="hero-car-overlay">
+          <div class="hero-feature-pill pill-1">
+            <i class="fa-solid fa-shield-check text-yellow"></i>
+            <span>Sanitized & GPS Monitored</span>
+          </div>
+          <div class="hero-feature-pill pill-2">
+            <i class="fa-solid fa-bolt text-yellow"></i>
+            <span>Zero Surge Pricing Always</span>
+          </div>
+          <div class="hero-feature-pill pill-3">
+            <i class="fa-solid fa-tag text-yellow"></i>
+            <span>Mumbai–Pune @ ₹1,799/-</span>
+          </div>
+        </div>
       </div>
 
       <!-- REVV-STYLE TABBED BOOKING ENGINE -->
@@ -148,19 +192,15 @@
         <form class="booking-form-box" id="revvBookingForm" onsubmit="processBooking(event)">
           <input type="hidden" name="selectedService" id="selectedService" value="Mumbai–Pune Corridor" />
 
-          <!-- Sub options for trip type (One Way / Round Trip / Monthly / Multi-Day) -->
+          <!-- Trip Mode Selector (One Way vs Round Trip) -->
           <div class="trip-mode-selector" id="tripModeSelector">
             <label class="radio-chip">
-              <input type="radio" name="tripType" value="One Way" checked onchange="updateTripFields()" />
+              <input type="radio" name="tripType" value="One Way" checked />
               <span><i class="fa-solid fa-arrow-right"></i> One Way</span>
             </label>
             <label class="radio-chip">
-              <input type="radio" name="tripType" value="Round Trip" onchange="updateTripFields()" />
+              <input type="radio" name="tripType" value="Round Trip" />
               <span><i class="fa-solid fa-arrows-left-right"></i> Round Trip</span>
-            </label>
-            <label class="radio-chip" id="customChipLocal" style="display: none;">
-              <input type="radio" name="tripType" value="Hourly Package" onchange="updateTripFields()" />
-              <span><i class="fa-solid fa-gauge"></i> City Package</span>
             </label>
           </div>
 
@@ -248,7 +288,7 @@
           <div class="booking-footer-strip">
             <div class="phone-input-wrap">
               <span class="phone-prefix">+91</span>
-              <input type="tel" id="userPhone" name="userPhone" placeholder="Enter Your Mobile Number for WhatsApp Confirmation" required pattern="[0-9]{10}" maxlength="10" />
+              <input type="tel" id="userPhone" name="userPhone" placeholder="Enter 10-Digit Mobile Number" required pattern="[0-9]{10}" maxlength="10" />
             </div>
 
             <div class="estimate-chip" id="estimateChip">
@@ -291,28 +331,28 @@
   <section class="stats-counter-strip">
     <div class="container stats-flex">
       <div class="stat-box">
-        <div class="stat-num" data-target="98000">98,000+</div>
+        <div class="stat-num">98,000+</div>
         <div class="stat-label">Happy Passengers Moved</div>
       </div>
       <div class="stat-sep"></div>
       <div class="stat-box">
-        <div class="stat-num" data-target="15">15+</div>
+        <div class="stat-num">15+</div>
         <div class="stat-label">Maharashtra Hub Cities</div>
       </div>
       <div class="stat-sep"></div>
       <div class="stat-box">
-        <div class="stat-num" data-target="100">100%</div>
+        <div class="stat-num">100%</div>
         <div class="stat-label">On-Time Pickup Record</div>
       </div>
       <div class="stat-sep"></div>
       <div class="stat-box">
-        <div class="stat-num" data-target="4.9">4.9 ★</div>
+        <div class="stat-num">4.9 ★</div>
         <div class="stat-label">Google Rating</div>
       </div>
     </div>
   </section>
 
-  <!-- ================= POPULAR ROUTES QUICK BOOKING ================= -->
+  <!-- ================= POPULAR ROUTES QUICK BOOKING WITH IMAGES ================= -->
   <section class="popular-routes-section" id="routes">
     <div class="container">
       <div class="section-title-wrap">
@@ -322,184 +362,190 @@
       </div>
 
       <div class="routes-cards-grid">
-        <!-- Route 1 -->
+        <!-- Route 1: Mumbai to Pune -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=600&q=80" alt="Mumbai to Pune Expressway Cab" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-regular fa-clock"></i> 2.5 - 3 Hrs</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Mumbai</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">Pune</span>
             </div>
-            <span class="time-tag"><i class="fa-regular fa-clock"></i> 2.5 - 3 Hrs</span>
-          </div>
-          <div class="route-info">
-            <p>Expressway pick & drop anywhere in Mumbai/Pune. Sedan or Ertiga AC.</p>
+            <p class="route-desc-txt">Expressway pick & drop anywhere in Mumbai or Pune. Clean Sedan or Ertiga AC.</p>
             <div class="route-meta">
               <span><i class="fa-solid fa-check"></i> Toll included option</span>
               <span><i class="fa-solid fa-check"></i> Doorstep Pickup</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Starting at</span>
-              <span class="cost">₹1,799<small>/-</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Starting at</span>
+                <span class="cost">₹1,799<small>/-</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Mumbai%20to%20Pune%20cab%20at%20best%20fare." target="_blank" class="book-route-btn">
+                <span>Book Now</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Mumbai%20to%20Pune%20cab%20at%20best%20fare." target="_blank" class="book-route-btn">
-              <span>Book Now</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
 
-        <!-- Route 2 -->
+        <!-- Route 2: Pune to Nashik -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Pune to Nashik Highway Cab" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-regular fa-clock"></i> 4.5 Hrs</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Pune</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">Nashik</span>
             </div>
-            <span class="time-tag"><i class="fa-regular fa-clock"></i> 4.5 Hrs</span>
-          </div>
-          <div class="route-info">
-            <p>Smooth drive via Sangamner highway. Pilgrim tours to Trimbakeshwar & Shirdi.</p>
+            <p class="route-desc-txt">Smooth drive via Sangamner highway. Pilgrim tours to Trimbakeshwar & Shirdi.</p>
             <div class="route-meta">
-              <span><i class="fa-solid fa-check"></i> Clean sanitized cars</span>
-              <span><i class="fa-solid fa-check"></i> Experienced drivers</span>
+              <span><i class="fa-solid fa-check"></i> Sanitized cars</span>
+              <span><i class="fa-solid fa-check"></i> Expert drivers</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Starting at</span>
-              <span class="cost">₹2,899<small>/-</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Starting at</span>
+                <span class="cost">₹2,899<small>/-</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Pune%20to%20Nashik%20cab." target="_blank" class="book-route-btn">
+                <span>Book Now</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Pune%20to%20Nashik%20cab." target="_blank" class="book-route-btn">
-              <span>Book Now</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
 
-        <!-- Route 3 -->
+        <!-- Route 3: Kolhapur / Solapur -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80" alt="Mumbai Pune to Kolhapur Solapur Cab" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-regular fa-clock"></i> 5 - 6 Hrs</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Mumbai / Pune</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">Kolhapur / Solapur</span>
             </div>
-            <span class="time-tag"><i class="fa-regular fa-clock"></i> 5 - 6 Hrs</span>
-          </div>
-          <div class="route-info">
-            <p>National Highway corridor for family visits, Mahalaxmi darshan, business travel.</p>
+            <p class="route-desc-txt">National Highway corridor for family visits, Mahalaxmi darshan, and business travel.</p>
             <div class="route-meta">
-              <span><i class="fa-solid fa-check"></i> Spacious luggage boots</span>
-              <span><i class="fa-solid fa-check"></i> Round-trip discounts</span>
+              <span><i class="fa-solid fa-check"></i> Large luggage space</span>
+              <span><i class="fa-solid fa-check"></i> Round-trip discount</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Starting at</span>
-              <span class="cost">₹3,999<small>/-</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Starting at</span>
+                <span class="cost">₹3,999<small>/-</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Mumbai%20to%20Kolhapur%20or%20Solapur." target="_blank" class="book-route-btn">
+                <span>Book Now</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Mumbai%20to%20Kolhapur%20or%20Solapur." target="_blank" class="book-route-btn">
-              <span>Book Now</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
 
-        <!-- Route 4 -->
+        <!-- Route 4: Alibaug / Konkan -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Alibaug Konkan Beach Cab" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-regular fa-clock"></i> 3 - 4 Hrs</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Mumbai / Pune</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">Alibaug / Konkan</span>
             </div>
-            <span class="time-tag"><i class="fa-regular fa-clock"></i> 3 - 4 Hrs</span>
-          </div>
-          <div class="route-info">
-            <p>Beach vacations, coastal tours, Dapoli, Ganpatipule, Malvan & all Konkan gems.</p>
+            <p class="route-desc-txt">Beach holidays, coastal tours, Dapoli, Ganpatipule, Malvan & all Konkan gems.</p>
             <div class="route-meta">
-              <span><i class="fa-solid fa-check"></i> Scenic routes expert</span>
-              <span><i class="fa-solid fa-check"></i> 7-seater Innova options</span>
+              <span><i class="fa-solid fa-check"></i> Coastal road expert</span>
+              <span><i class="fa-solid fa-check"></i> 7-seater Innova option</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Starting at</span>
-              <span class="cost">₹2,499<small>/-</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Starting at</span>
+                <span class="cost">₹2,499<small>/-</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Alibaug%20or%20Konkan%20tour%20cab." target="_blank" class="book-route-btn">
+                <span>Book Now</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20Alibaug%20or%20Konkan%20tour%20cab." target="_blank" class="book-route-btn">
-              <span>Book Now</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
 
-        <!-- Route 5 -->
+        <!-- Route 5: Sambhaji Nagar / Latur -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626014303757-646700085a6a?auto=format&fit=crop&w=600&q=80" alt="Samruddhi Mahamarg Sambhaji Nagar Cab" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-regular fa-clock"></i> Samruddhi Exp</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Mumbai / Pune</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">Sambhaji Nagar / Latur</span>
             </div>
-            <span class="time-tag"><i class="fa-regular fa-clock"></i> Samruddhi Exp</span>
-          </div>
-          <div class="route-info">
-            <p>Fast journeys via Samruddhi Mahamarg. Sambhaji Nagar, Parbhani, Latur & Nanded.</p>
+            <p class="route-desc-txt">Fast journeys via Samruddhi Mahamarg. Sambhaji Nagar, Parbhani, Latur & Nanded.</p>
             <div class="route-meta">
-              <span><i class="fa-solid fa-check"></i> Expressway speed rated</span>
+              <span><i class="fa-solid fa-check"></i> High speed rated cars</span>
               <span><i class="fa-solid fa-check"></i> Night rides available</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Starting at</span>
-              <span class="cost">₹3,499<small>/-</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Starting at</span>
+                <span class="cost">₹3,499<small>/-</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20cab%20for%20Sambhaji%20Nagar%20or%20Latur." target="_blank" class="book-route-btn">
+                <span>Book Now</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20book%20cab%20for%20Sambhaji%20Nagar%20or%20Latur." target="_blank" class="book-route-btn">
-              <span>Book Now</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
 
-        <!-- Route 6 -->
+        <!-- Route 6: All India Outstation -->
         <div class="route-item-card">
-          <div class="route-top">
+          <div class="route-img-wrap">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" alt="All India Highway Outstation" class="route-card-img" loading="lazy" />
+            <span class="route-overlay-tag"><i class="fa-solid fa-earth-americas"></i> Pan India</span>
+          </div>
+          <div class="route-content">
             <div class="route-cities">
               <span class="city-name">Maharashtra</span>
               <i class="fa-solid fa-arrow-right-long route-arrow"></i>
               <span class="city-name">All India Outstation</span>
             </div>
-            <span class="time-tag"><i class="fa-solid fa-earth-americas"></i> Pan India</span>
-          </div>
-          <div class="route-info">
-            <p>Interstate tours to Goa, Gujarat, Karnataka, Madhya Pradesh, Rajasthan & Delhi.</p>
+            <p class="route-desc-txt">Interstate tours to Goa, Gujarat, Karnataka, Madhya Pradesh, Rajasthan & Delhi.</p>
             <div class="route-meta">
               <span><i class="fa-solid fa-check"></i> All India Tourist Permit</span>
               <span><i class="fa-solid fa-check"></i> Experienced highway pilot</span>
             </div>
-          </div>
-          <div class="route-price-action">
-            <div class="price-box">
-              <span class="label">Per Km from</span>
-              <span class="cost">₹11<small>/km</small></span>
+            <div class="route-price-action">
+              <div class="price-box">
+                <span class="label">Per Km from</span>
+                <span class="cost">₹11<small>/km</small></span>
+              </div>
+              <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20enquire%20about%20All%20India%20Outstation%20trip." target="_blank" class="book-route-btn">
+                <span>Custom Quote</span>
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/919860013081?text=Hi%20Reddy%20Tours%2C%20I%20want%20to%20enquire%20about%20All%20India%20Outstation%20trip." target="_blank" class="book-route-btn">
-              <span>Custom Quote</span>
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= OUR 6 CORE SERVICES ================= -->
+  <!-- ================= OUR 6 CORE SERVICES WITH IMAGES ================= -->
   <section class="services-catalog-section" id="services">
     <div class="container">
       <div class="section-title-wrap">
@@ -511,122 +557,134 @@
       <div class="service-grid-boxes">
         <!-- Service 1 -->
         <div class="srv-box">
-          <div class="srv-number">01</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-route"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80" alt="Mumbai Pune Corridor Cabs" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 01</span>
           </div>
-          <h3 class="srv-title">Mumbai–Pune Regular Up-Down Corridor</h3>
-          <p class="srv-text">
-            Scheduled and on-demand daily roundtrips. Complete coverage of <strong>Mumbai, Pune, Nashik, Solapur, Kolhapur, Nagpur, Latur, Parbhani, Ahilyanagar, Sambhaji Nagar, Sangli, Satara, Alibaug, and all Konkan regions</strong>.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Shared or Dedicated Private Cabs</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Airport, Railway, & Home Pickups</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> 24x7 Continuous Availability</li>
-          </ul>
-          <a href="https://wa.me/919860013081?text=Hi%2C%20I%20need%20cab%20booking%20for%20Mumbai-Pune%20Maharashtra%20Corridor." target="_blank" class="srv-link-btn">
-            Book Corridor Cab <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Mumbai–Pune Regular Corridor</h3>
+            <p class="srv-text">
+              Scheduled and on-demand daily roundtrips. Complete coverage of <strong>Mumbai, Pune, Nashik, Solapur, Kolhapur, Nagpur, Latur, Parbhani, Ahilyanagar, Sambhaji Nagar, Sangli, Satara, Alibaug, and all Konkan regions</strong>.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Shared or Dedicated Private Cabs</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Airport, Railway, & Home Pickups</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> 24x7 Continuous Availability</li>
+            </ul>
+            <a href="https://wa.me/919860013081?text=Hi%2C%20I%20need%20cab%20booking%20for%20Mumbai-Pune%20Maharashtra%20Corridor." target="_blank" class="srv-link-btn">
+              Book Corridor Cab <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Service 2 -->
         <div class="srv-box">
-          <div class="srv-number">02</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-globe"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" alt="Outstation All India Cab" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 02</span>
           </div>
-          <h3 class="srv-title">Outstation All India Series</h3>
-          <p class="srv-text">
-            Long-distance inter-state travel made easy. Licensed commercial fleet with All India Tourist Permits (AITP), GST invoices, and veteran highway chauffeurs.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Transparent Per-Km / Fixed Packages</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Multi-city Pilgrimages & Vacations</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> GPS Monitored for Total Safety</li>
-          </ul>
-          <a href="https://wa.me/919860013081?text=Hi%2C%20I%20want%20to%20book%20All%20India%20Outstation%20car." target="_blank" class="srv-link-btn">
-            Explore Outstation <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Outstation All India Series</h3>
+            <p class="srv-text">
+              Long-distance inter-state travel made easy. Licensed commercial fleet with All India Tourist Permits (AITP), GST invoices, and veteran highway chauffeurs.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Transparent Per-Km / Fixed Packages</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Multi-city Pilgrimages & Vacations</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> GPS Monitored for Total Safety</li>
+            </ul>
+            <a href="https://wa.me/919860013081?text=Hi%2C%20I%20want%20to%20book%20All%20India%20Outstation%20car." target="_blank" class="srv-link-btn">
+              Explore Outstation <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Service 3 -->
         <div class="srv-box">
-          <div class="srv-number">03</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-clock-rotate-left"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80" alt="Local Hourly Package Cab" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 03</span>
           </div>
-          <h3 class="srv-title">Local Hourly Rental Packages</h3>
-          <p class="srv-text">
-            Car at your disposal for city errands, multiple office meetings, shopping, or hospital visits. Choose between <strong>8 hrs / 80 Km, 10 hrs / 100 Km, and 12 hrs / 120 Km</strong>.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Unlimited Stops Within Time Limit</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Chilled AC, Fuel & Driver Included</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Nominal charges for extra Km/Hrs</li>
-          </ul>
-          <a href="#packages" class="srv-link-btn">
-            View Hourly Packages <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Local Hourly Rental Packages</h3>
+            <p class="srv-text">
+              Car at your disposal for city errands, multiple office meetings, shopping, or hospital visits. Choose between <strong>8 hrs / 80 Km, 10 hrs / 100 Km, and 12 hrs / 120 Km</strong>.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Unlimited Stops Within Time Limit</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Chilled AC, Fuel & Driver Included</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Nominal charges for extra Km/Hrs</li>
+            </ul>
+            <a href="#packages" class="srv-link-btn">
+              View Hourly Packages <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Service 4 -->
         <div class="srv-box">
-          <div class="srv-number">04</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-champagne-glasses"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding and Event Car Rental" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 04</span>
           </div>
-          <h3 class="srv-title">Events, Marriages & Celebrations</h3>
-          <p class="srv-text">
-            Complete convoy arrangements for grand weddings, birthdays, family celebrations, and VIP delegation movement across banquet halls, resorts, and destination venues.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Decorated Luxury Groom & Bridal Cars</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Guest Shuttle Tempo Travellers</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Uniformed, Polite Chauffeurs</li>
-          </ul>
-          <a href="https://wa.me/919860013081?text=Hi%2C%20I%20need%20fleet%20arrangement%20for%20Wedding%20or%20Event." target="_blank" class="srv-link-btn">
-            Plan Event Fleet <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Events, Marriages & Celebrations</h3>
+            <p class="srv-text">
+              Complete convoy arrangements for grand weddings, birthdays, family celebrations, and VIP delegation movement across banquet halls, resorts, and destination venues.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Decorated Luxury Groom & Bridal Cars</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Guest Shuttle Tempo Travellers</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Uniformed, Polite Chauffeurs</li>
+            </ul>
+            <a href="https://wa.me/919860013081?text=Hi%2C%20I%20need%20fleet%20arrangement%20for%20Wedding%20or%20Event." target="_blank" class="srv-link-btn">
+              Plan Event Fleet <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Service 5 -->
         <div class="srv-box">
-          <div class="srv-number">05</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-building-user"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Corporate Employee Commute" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 05</span>
           </div>
-          <h3 class="srv-title">Corporate Employee Pick-Drop & Vendors</h3>
-          <p class="srv-text">
-            Dedicated vendor contracts for IT parks, manufacturing plants, and multinational corporations. Daily employee shifts, executive transfers, and monthly retainer billing.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Centralized Roster & Shift Tracking</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Monthly GST Billing & Audited Logs</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Rigorous Driver Background Checks</li>
-          </ul>
-          <a href="#corporate" class="srv-link-btn">
-            Corporate Tie-Ups <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Corporate Employee Pick-Drop & Vendors</h3>
+            <p class="srv-text">
+              Dedicated vendor contracts for IT parks, manufacturing plants, and multinational corporations. Daily employee shifts, executive transfers, and monthly retainer billing.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Centralized Roster & Shift Tracking</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Monthly GST Billing & Audited Logs</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Rigorous Driver Background Checks</li>
+            </ul>
+            <a href="#corporate" class="srv-link-btn">
+              Corporate Tie-Ups <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Service 6 -->
         <div class="srv-box">
-          <div class="srv-number">06</div>
-          <div class="srv-icon-bubble">
-            <i class="fa-solid fa-key"></i>
+          <div class="srv-img-header">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=600&q=80" alt="Self Drive Intercity Car Rental" class="srv-thumb-img" loading="lazy" />
+            <span class="srv-tag-badge">Service 06</span>
           </div>
-          <h3 class="srv-title">Self Drive Intercity Rentals</h3>
-          <p class="srv-text">
-            Be your own captain. Revv & Zoomcar style self-drive intercity freedom with sanitized cars, flexible pickup points, zero security hassle, and full comprehensive insurance.
-          </p>
-          <ul class="srv-checklist">
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Unlimited or Capped KMs Options</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Well-Maintained Manual & Auto Gears</li>
-            <li><i class="fa-solid fa-circle-check text-yellow"></i> Fast Digital Document Verification</li>
-          </ul>
-          <a href="https://wa.me/919860013081?text=Hi%2C%20I%20want%20to%20enquire%20about%20Self%20Drive%20Intercity%20Cars." target="_blank" class="srv-link-btn">
-            Rent Self Drive <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="srv-body-content">
+            <h3 class="srv-title">Self Drive Intercity Rentals</h3>
+            <p class="srv-text">
+              Be your own captain. Revv & Zoomcar style self-drive intercity freedom with sanitized cars, flexible pickup points, zero security hassle, and full comprehensive insurance.
+            </p>
+            <ul class="srv-checklist">
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Unlimited or Capped KMs Options</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Well-Maintained Manual & Auto Gears</li>
+              <li><i class="fa-solid fa-circle-check text-yellow"></i> Fast Digital Document Verification</li>
+            </ul>
+            <a href="https://wa.me/919860013081?text=Hi%2C%20I%20want%20to%20enquire%20about%20Self%20Drive%20Intercity%20Cars." target="_blank" class="srv-link-btn">
+              Rent Self Drive <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -727,7 +785,7 @@
     </div>
   </section>
 
-  <!-- ================= FLEET SHOWCASE (REVV STYLE) ================= -->
+  <!-- ================= REVV-STYLE FLEET SHOWCASE WITH REAL CAR PHOTOS ================= -->
   <section class="fleet-showcase-section" id="fleet">
     <div class="container">
       <div class="section-title-wrap">
@@ -746,15 +804,15 @@
       </div>
 
       <div class="fleet-grid">
-        <!-- Vehicle 1: Dzire Sedan -->
+        <!-- Vehicle 1: Dzire Sedan with Image -->
         <div class="car-item-card" data-category="sedan">
           <div class="car-badge">Bestseller</div>
           <div class="car-visual-box">
-            <i class="fa-solid fa-car-side car-placeholder-icon"></i>
-            <span class="car-real-name">Maruti Suzuki Dzire / Toyota Etios</span>
+            <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=80" alt="Maruti Dzire Sedan AC Cab" class="car-photo-img" loading="lazy" />
           </div>
           <div class="car-body-content">
-            <div class="car-class">Comfort Sedan • AC</div>
+            <h3 class="car-real-name">Maruti Suzuki Dzire / Toyota Etios</h3>
+            <div class="car-class">Comfort Sedan • Chilled AC</div>
             <div class="car-specs-row">
               <span><i class="fa-solid fa-user-group text-yellow"></i> 4 Seats</span>
               <span><i class="fa-solid fa-suitcase-rolling text-yellow"></i> 2 Bags</span>
@@ -773,14 +831,14 @@
           </div>
         </div>
 
-        <!-- Vehicle 2: Ertiga SUV -->
+        <!-- Vehicle 2: Ertiga SUV with Image -->
         <div class="car-item-card" data-category="suv">
           <div class="car-badge">Family Favorite</div>
           <div class="car-visual-box">
-            <i class="fa-solid fa-truck-pickup car-placeholder-icon"></i>
-            <span class="car-real-name">Maruti Ertiga / Kia Carens</span>
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Maruti Ertiga Carens SUV Cab" class="car-photo-img" loading="lazy" />
           </div>
           <div class="car-body-content">
+            <h3 class="car-real-name">Maruti Ertiga / Kia Carens</h3>
             <div class="car-class">Family SUV • Dual AC</div>
             <div class="car-specs-row">
               <span><i class="fa-solid fa-user-group text-yellow"></i> 6 Seats</span>
@@ -800,14 +858,14 @@
           </div>
         </div>
 
-        <!-- Vehicle 3: Innova Crysta -->
+        <!-- Vehicle 3: Innova Crysta with Image -->
         <div class="car-item-card" data-category="luxury">
           <div class="car-badge vip-badge">Executive Class</div>
           <div class="car-visual-box">
-            <i class="fa-solid fa-van-shuttle car-placeholder-icon"></i>
-            <span class="car-real-name">Toyota Innova Crysta / Hycross</span>
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" alt="Toyota Innova Crysta Luxury Cab" class="car-photo-img" loading="lazy" />
           </div>
           <div class="car-body-content">
+            <h3 class="car-real-name">Toyota Innova Crysta / Hycross</h3>
             <div class="car-class">VIP Luxury MPV • Captain Seats</div>
             <div class="car-specs-row">
               <span><i class="fa-solid fa-user-group text-yellow"></i> 7 Seats</span>
@@ -827,14 +885,14 @@
           </div>
         </div>
 
-        <!-- Vehicle 4: Tempo Traveller -->
+        <!-- Vehicle 4: Force Tempo Traveller with Image -->
         <div class="car-item-card" data-category="tempo">
           <div class="car-badge">Group Tour</div>
           <div class="car-visual-box">
-            <i class="fa-solid fa-bus-simple car-placeholder-icon"></i>
-            <span class="car-real-name">Force Tempo Traveller (13/17/26S)</span>
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80" alt="Force Tempo Traveller Group Van" class="car-photo-img" loading="lazy" />
           </div>
           <div class="car-body-content">
+            <h3 class="car-real-name">Force Tempo Traveller (13/17/26S)</h3>
             <div class="car-class">Group Convoy • Pushback AC</div>
             <div class="car-specs-row">
               <span><i class="fa-solid fa-user-group text-yellow"></i> 13-26 Seats</span>
@@ -857,7 +915,7 @@
     </div>
   </section>
 
-  <!-- ================= CORPORATE & VENDOR PACKAGES ================= -->
+  <!-- ================= CORPORATE BANNER (REVV FOR BUSINESS STYLE) ================= -->
   <section class="corporate-banner-section" id="corporate">
     <div class="container">
       <div class="corporate-card-dark">

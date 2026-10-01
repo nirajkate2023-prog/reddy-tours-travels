@@ -27,15 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const menuBackdrop = document.getElementById('menuBackdrop');
+
   if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
+    const toggleMenu = () => {
+      const isOpen = navMenu.classList.toggle('open');
+      if (menuBackdrop) menuBackdrop.classList.toggle('show', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
+    if (menuBackdrop) menuBackdrop.addEventListener('click', toggleMenu);
 
     // Close mobile menu on link click
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
+        if (menuBackdrop) menuBackdrop.classList.remove('show');
+        document.body.style.overflow = '';
       });
     });
   }
