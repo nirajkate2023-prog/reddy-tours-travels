@@ -2385,10 +2385,14 @@ body {
     padding-bottom: 74px;
   }
 
-  /* Slide-down Mobile Menu */
+  /* Slide-down Mobile Menu. The header's backdrop-filter makes it the
+     containing block for position:fixed children, so top:100% anchors the
+     menu exactly to the header's bottom edge. The closed state is hidden
+     with visibility (not just an offset transform) so the now much shorter
+     2-item menu can never peek above the fold. */
   .nav-menu {
     position: fixed;
-    top: 74px;
+    top: 100%;
     left: 0;
     right: 0;
     background: #FFFFFF;
@@ -2397,12 +2401,18 @@ body {
     gap: 8px;
     border-bottom: 1px solid var(--border-light);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
     transition: var(--transition);
     z-index: 999;
   }
 
   .nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transform: translateY(0);
   }
 
