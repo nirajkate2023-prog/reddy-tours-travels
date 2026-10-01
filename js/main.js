@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navMenu.classList.toggle('open');
       if (menuBackdrop) menuBackdrop.classList.toggle('show', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
     };
 
     menuToggle.addEventListener('click', toggleMenu);
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('open');
         if (menuBackdrop) menuBackdrop.classList.remove('show');
         document.body.style.overflow = '';
+        menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       tabButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      tabButtons.forEach(b => b.setAttribute('aria-selected', String(b === btn)));
 
       const serviceKey = btn.getAttribute('data-service');
       const serviceName = btn.querySelector('span').innerText;
@@ -197,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pill.addEventListener('click', () => {
       filterPills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
+      filterPills.forEach(p => p.setAttribute('aria-pressed', String(p === pill)));
 
       const filter = pill.getAttribute('data-filter');
 
@@ -226,12 +230,14 @@ document.addEventListener('DOMContentLoaded', () => {
       faqRows.forEach(r => {
         r.classList.remove('active');
         r.querySelector('.faq-answer').style.maxHeight = null;
+        r.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
       });
 
       // Open selected if wasn't open
       if (!isOpen) {
         row.classList.add('active');
         answer.style.maxHeight = answer.scrollHeight + 'px';
+        questionBtn.setAttribute('aria-expanded', 'true');
       }
     });
   });

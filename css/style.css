@@ -18,7 +18,7 @@
 
   --text-dark: #121217;
   --text-body: #4A4A57;
-  --text-light: #7E7E91;
+  --text-light: #6B6B7A;
 
   --white: #FFFFFF;
   --bg-soothing: #F8F9FC;
@@ -58,6 +58,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -244,99 +246,52 @@ body {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .menu-item {
   text-decoration: none;
   color: var(--text-body);
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   font-weight: 600;
-  padding: 8px 14px;
-  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
   transition: var(--transition);
   white-space: nowrap;
 }
 
-.menu-item:hover, .menu-item.active {
+.menu-item:hover {
+  color: var(--black-deep);
+  background: var(--bg-alt);
+}
+
+.menu-item.active {
   color: var(--black-deep);
   background: var(--yellow-light);
+  font-weight: 700;
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.nav-call-pill {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  padding: 6px 14px 6px 6px;
-  border-radius: var(--radius-pill);
-  background: var(--bg-alt);
-  border: 1px solid var(--border-light);
-  transition: var(--transition);
-}
-
-.nav-call-pill:hover {
-  background: #ECEFF6;
-  border-color: #D3D8E5;
-}
-
-.nav-call-pill .icon-circle {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+/* Minimalist Phone Link */
+.menu-item.menu-phone {
   background: var(--black-deep);
-  color: var(--yellow-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-}
-
-.nav-call-pill .call-txt {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-call-pill .sm-txt {
-  font-size: 0.65rem;
-  color: var(--text-light);
-  text-transform: uppercase;
+  color: #FFFFFF;
   font-weight: 700;
-}
-
-.nav-call-pill strong {
-  font-size: 0.86rem;
-  color: var(--black-deep);
-  font-weight: 700;
-}
-
-.nav-wa-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--yellow-primary);
-  color: var(--black-deep);
-  font-weight: 800;
-  font-size: 0.88rem;
-  padding: 10px 18px;
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  box-shadow: var(--shadow-yellow);
-  transition: var(--transition);
-  white-space: nowrap;
+  margin-left: 6px;
+  box-shadow: 0 4px 14px rgba(17, 17, 22, 0.12);
 }
 
-.nav-wa-btn:hover {
-  background: var(--yellow-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(255, 200, 0, 0.45);
+.menu-item.menu-phone i {
+  color: var(--yellow-primary);
+  font-size: 0.85rem;
+}
+
+.menu-item.menu-phone:hover {
+  background: #252532;
+  color: var(--yellow-primary);
+  transform: translateY(-1px);
 }
 
 .nav-toggle {
@@ -1104,7 +1059,7 @@ body {
 
 .route-meta span {
   font-size: 0.76rem;
-  color: #10B981;
+  color: #047857;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -1430,7 +1385,7 @@ body {
   align-items: center;
   gap: 5px;
   font-size: 0.76rem;
-  color: #10B981;
+  color: #047857;
   font-weight: 700;
   margin-top: 4px;
 }
@@ -2213,6 +2168,10 @@ body {
   color: #FFFFFF;
 }
 
+.footer-logo .brand-caption {
+  color: #9A9AAB;
+}
+
 .footer-tagline {
   font-size: 0.88rem;
   line-height: 1.7;
@@ -2314,7 +2273,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 22px 0;
   font-size: 0.82rem;
-  color: #6E6E80;
+  color: #9A9AAB;
 }
 
 .bottom-flex {
@@ -2633,5 +2592,197 @@ body {
 
   .pkg-card-white {
     padding: 24px 18px;
+  }
+}
+
+/* ========================================================
+   MOBILE POLISH, ACCESSIBILITY & MOTION
+   Added for mobile alignment, tap targets and a11y focus
+   ======================================================== */
+
+/* Media and embeds never overflow their containers */
+img, svg, video {
+  max-width: 100%;
+}
+
+/* Skip link for keyboard and screen-reader users */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -70px;
+  z-index: 2000;
+  background: var(--black-deep);
+  color: var(--yellow-primary);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Visible keyboard focus for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--yellow-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+@media (max-width: 768px) {
+  /* Keep content clear of the sticky bottom bar + iOS safe area.
+     Bar labels are kept on one line so its height stays predictable. */
+  body {
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .mob-bar-btn {
+    white-space: nowrap;
+    min-height: 48px;
+  }
+
+  /* Comfortable tap targets (min 44px) */
+  .nav-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-btn,
+  .pill-btn,
+  .menu-item {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .mob-bar-btn { min-height: 48px; }
+
+  .book-route-btn,
+  .car-book-btn,
+  .srv-link-btn,
+  .pkg-select-btn {
+    min-height: 44px;
+  }
+
+  /* Tighter, consistent vertical rhythm */
+  .popular-routes-section,
+  .services-catalog-section,
+  .packages-detailed-section,
+  .fleet-showcase-section,
+  .corporate-banner-section,
+  .how-it-works-section,
+  .why-choose-section,
+  .reviews-section,
+  .faq-section {
+    padding: 56px 0;
+  }
+
+  .section-title-wrap { margin-bottom: 32px; }
+
+  .revv-footer { padding-top: 52px; }
+  .footer-grid { padding-bottom: 36px; }
+
+  /* Announcement bar wraps neatly and stays centred */
+  .top-announcement { font-size: 0.78rem; }
+  .announcement-inner { justify-content: center; text-align: center; }
+  .announce-left {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Realign stats as a tidy 2x2 grid instead of a tall stack */
+  .stats-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+    text-align: center;
+  }
+
+  .stat-num { font-size: 1.9rem; }
+
+  /* Card action rows wrap instead of squashing */
+  .route-price-action,
+  .car-pricing-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .booking-badges-row { justify-content: flex-start; }
+
+  .final-cta-bar { padding: 40px 0; }
+  .cta-left h2 { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .top-announcement { font-size: 0.74rem; }
+  .pulse-tag { font-size: 0.66rem; }
+  .announce-text { line-height: 1.4; }
+
+  .hero-pill-badge {
+    font-size: 0.72rem;
+    padding: 5px 12px;
+    text-align: center;
+  }
+
+  .hero-car-visual-banner { height: 160px; }
+
+  .mob-bar-btn {
+    font-size: 0.84rem;
+    padding: 10px 8px;
+  }
+
+  .dual-date-row { flex-direction: column; gap: 6px; }
+
+  .car-specs-row { gap: 6px; font-size: 0.72rem; }
+
+  .route-cities {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+  }
+
+  .step-card,
+  .benefit-box,
+  .rev-card {
+    padding: 24px 20px;
+  }
+
+  .faq-question {
+    padding: 16px 18px;
+    font-size: 0.98rem;
+  }
+
+  .faq-answer { padding: 0 18px; }
+
+  .corp-stat-badge .num { font-size: 2.2rem; }
+}
+
+@media (max-width: 360px) {
+  .brand-name { font-size: 1.2rem; }
+  .brand-caption { letter-spacing: 1.2px; }
+  .revv-submit-btn { font-size: 0.9rem; }
+  .cta-btn-primary,
+  .cta-btn-wa { font-size: 0.88rem; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }

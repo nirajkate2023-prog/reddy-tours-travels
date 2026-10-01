@@ -1,0 +1,43 @@
+# Reddy Tours & Travels
+
+> Maharashtra-based cab and car rental service offering Mumbai–Pune express cabs, All-India outstation taxis, local hourly packages, corporate employee transport, wedding fleets, and self-drive intercity cars. Zero surge pricing, sanitized AC vehicles, and police-verified chauffeurs.
+
+## Key facts
+
+- Business name: Reddy Tours & Travels
+- Service area: Maharashtra, India (Mumbai, Pune, Nashik, Thane, Navi Mumbai, Kolhapur, Solapur, Nagpur, Latur, Chhatrapati Sambhajinagar, Alibaug) plus pan-India outstation
+- Phone / WhatsApp: +91 98600 13081
+- Email: booking@reddytourstravels.com
+- Hours: 24/7, all days
+- Payment: Cash, UPI, Bank Transfer; GST invoices available
+- Availability: 24x7 doorstep pickup, zero advance required for inquiries
+
+## Services
+
+- Mumbai–Pune Express Corridor: fixed-price one-way and round-trip cabs, toll-inclusive options, starting at ₹1,799.
+- All-India Outstation: All India Tourist Permit fleet, from ₹11/km (Sedan), ₹14/km (SUV), ₹18/km (Innova Crysta), ₹24/km (Tempo Traveller).
+- Local Hourly Packages: 8 hrs/80 km from ₹1,999, 10 hrs/100 km from ₹2,499, 12 hrs/120 km from ₹2,999 (fuel and driver included).
+- Events & Weddings: decorated luxury groom/bridal cars and guest shuttle tempo travellers.
+- Corporate Employee Pick-Drop: monthly retainer contracts, centralized rosters, GST billing, background-checked drivers.
+- Self-Drive Intercity: cars without chauffeur, digital licence and Aadhaar verification, from ₹1,499/day.
+
+## Fleet
+
+- Maruti Suzuki Dzire / Toyota Etios (4-seater sedan)
+- Maruti Ertiga / Kia Carens (6-seater SUV)
+- Toyota Innova Crysta / Hycross (7-seater luxury MPV)
+- Force Tempo Traveller (13 / 17 / 26 seater)
+
+## Frequently asked questions
+
+- How does WhatsApp booking work? Select pickup and drop city, choose car and date, then click "Book on WhatsApp"; a coordinator confirms car and driver details immediately.
+- Are tolls and parking included? One-way Mumbai–Pune packages are toll-inclusive; outstation tolls and permits are billed at actual Fastag receipts.
+- Can I book multi-city outstation tours across India? Yes, All India Tourist Permit cabs are available for multi-day interstate tours.
+- How does Self-Drive work? Rent without a chauffeur after digital licence and Aadhaar verification; hub pickup or doorstep delivery.
+- What is the cost of a Mumbai to Pune cab? Sedan from ₹1,799, Premium SUV from about ₹2,599, Innova Crysta from about ₹3,499.
+
+## Contact
+
+- Website: https://nirajkate2023-prog.github.io/reddy-tours-travels/
+- Phone: +91 98600 13081
+- WhatsApp: https://wa.me/919860013081
