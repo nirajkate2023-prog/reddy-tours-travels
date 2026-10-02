@@ -454,56 +454,61 @@ body {
    ======================================================== */
 .revv-hero {
   position: relative;
-  padding: 48px 0 64px;
-  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-soothing) 100%);
+  padding: 0;
+  background: var(--black-deep);
   overflow: hidden;
 }
 
-.hero-bg-shapes {
+/* Full-bleed scenic backdrop */
+.hero-media {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
+  inset: 0;
   z-index: 0;
 }
 
-.shape-circle-yellow {
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  display: block;
+}
+
+.hero-scrim {
   position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 200, 0, 0.14) 0%, rgba(255, 200, 0, 0) 70%);
-  top: -120px;
-  right: -100px;
-  filter: blur(40px);
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(17, 17, 22, 0.84) 0%, rgba(17, 17, 22, 0.42) 42%, rgba(17, 17, 22, 0.9) 100%),
+    radial-gradient(120% 90% at 50% 0%, rgba(17, 17, 22, 0) 38%, rgba(17, 17, 22, 0.55) 100%);
 }
 
 .hero-container {
   position: relative;
   z-index: 1;
+  padding-top: 88px;
+  padding-bottom: 66px;
 }
 
 .hero-header-text {
   text-align: center;
-  max-width: 860px;
-  margin: 0 auto 28px;
+  max-width: 900px;
+  margin: 0 auto 40px;
 }
 
 .hero-pill-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
-  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 7px 16px;
   border-radius: var(--radius-pill);
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--text-body);
-  margin-bottom: 16px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
 }
 
 .dot-live {
@@ -522,73 +527,54 @@ body {
 
 .hero-headline {
   font-family: var(--font-heading);
-  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+  font-size: clamp(2.2rem, 4.6vw, 3.8rem);
   font-weight: 900;
-  line-height: 1.18;
-  letter-spacing: -0.8px;
-  color: var(--black-deep);
-  margin-bottom: 14px;
+  line-height: 1.12;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
 }
 
 .highlight-yellow {
-  background: linear-gradient(180deg, transparent 65%, #FFE98A 65%);
+  background: var(--yellow-primary);
+  color: var(--black-deep);
   display: inline-block;
-  padding: 0 4px;
+  padding: 0 10px;
+  border-radius: 8px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .hero-subtext {
   font-size: 1.05rem;
-  color: var(--text-body);
+  color: #E6E8F0;
   font-weight: 500;
+  max-width: 740px;
+  margin: 0 auto;
 }
 
-/* Hero Visual Banner (Car photo) */
-.hero-car-visual-banner {
-  position: relative;
-  width: 100%;
-  height: 260px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 24px;
-  box-shadow: var(--shadow-card);
-}
-
-.hero-car-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 60%;
-  transition: transform 0.6s ease;
-}
-
-.hero-car-visual-banner:hover .hero-car-img {
-  transform: scale(1.03);
-}
-
-.hero-car-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(17, 17, 22, 0.1) 0%, rgba(17, 17, 22, 0.7) 100%);
+.hero-pills-row {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 20px 24px;
-  gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
 }
 
 .hero-feature-pill {
-  background: rgba(17, 17, 22, 0.85);
+  background: rgba(17, 17, 22, 0.55);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 16px;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
 }
 
 /* ========================================================
@@ -3060,29 +3046,31 @@ body {
   }
 
   /* Hero & Visual Adjustments */
-  .revv-hero {
-    padding: 28px 0 44px;
+  .hero-container {
+    padding-top: 54px;
+    padding-bottom: 44px;
+  }
+
+  .hero-header-text {
+    margin-bottom: 26px;
   }
 
   .hero-headline {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
   }
 
   .hero-subtext {
     font-size: 0.92rem;
   }
 
-  .hero-car-visual-banner {
-    height: 180px;
+  .hero-pills-row {
+    gap: 8px;
+    margin-top: 18px;
   }
 
   .hero-feature-pill {
     font-size: 0.72rem;
-    padding: 4px 10px;
-  }
-
-  .hero-feature-pill.pill-3 {
-    display: none;
+    padding: 6px 12px;
   }
 
   /* Booking Widget */
@@ -3388,8 +3376,6 @@ select:focus-visible,
     padding: 5px 12px;
     text-align: center;
   }
-
-  .hero-car-visual-banner { height: 160px; }
 
   .mob-bar-btn {
     font-size: 0.84rem;
