@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylised coastal drive: a white car on a winding seaside road, warm golden palette">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFBEE"/>
+      <stop offset="0.55" stop-color="#FFF0C4"/>
+      <stop offset="1" stop-color="#FFE39A"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD46B"/>
+      <stop offset="1" stop-color="#F1B330"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EBD79F"/>
+      <stop offset="1" stop-color="#CBB066"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFC800" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFC800" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1600" height="800" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1195" cy="185" r="230" fill="url(#glow)"/>
+  <circle cx="1195" cy="185" r="84" fill="#FFC800"/>
+
+  <!-- clouds -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="300" cy="150" rx="125" ry="34"/>
+    <ellipse cx="405" cy="172" rx="92" ry="26"/>
+    <ellipse cx="232" cy="182" rx="78" ry="23"/>
+    <ellipse cx="880" cy="112" rx="106" ry="30"/>
+    <ellipse cx="966" cy="134" rx="72" ry="20"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#2A2A33" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.65">
+    <path d="M690 210 q13 -13 26 0"/>
+    <path d="M742 188 q11 -11 22 0"/>
+    <path d="M792 218 q10 -10 20 0"/>
+  </g>
+
+  <!-- far mountains -->
+  <path d="M0 442 L150 322 L292 414 L446 300 L610 440 L780 336 L950 452 L1120 318 L1290 430 L1470 340 L1600 424 L1600 520 L0 520 Z"
+        fill="#F3E6C2"/>
+
+  <!-- far shore + city skyline -->
+  <g fill="#2B2B33">
+    <rect x="905" y="360" width="46" height="150"/>
+    <rect x="959" y="318" width="38" height="192"/>
+    <rect x="1005" y="392" width="52" height="118"/>
+    <rect x="1065" y="338" width="42" height="172"/>
+    <rect x="1115" y="298" width="34" height="212"/>
+    <rect x="1157" y="372" width="48" height="138"/>
+    <rect x="1213" y="332" width="36" height="178"/>
+    <rect x="1257" y="396" width="54" height="114"/>
+    <rect x="1319" y="352" width="40" height="158"/>
+    <rect x="1367" y="404" width="62" height="106"/>
+    <rect x="1437" y="366" width="38" height="144"/>
+  </g>
+  <g fill="#FFC800" opacity="0.85">
+    <rect x="915" y="378" width="9" height="9"/><rect x="933" y="378" width="9" height="9"/>
+    <rect x="969" y="340" width="8" height="8"/><rect x="985" y="340" width="8" height="8"/>
+    <rect x="1075" y="358" width="9" height="9"/><rect x="1092" y="358" width="9" height="9"/>
+    <rect x="1123" y="318" width="8" height="8"/><rect x="1123" y="336" width="8" height="8"/>
+    <rect x="1223" y="352" width="8" height="8"/><rect x="1239" y="352" width="8" height="8"/>
+    <rect x="1329" y="372" width="9" height="9"/><rect x="1346" y="372" width="9" height="9"/>
+  </g>
+
+  <!-- sea -->
+  <rect x="0" y="442" width="1600" height="128" fill="url(#sea)"/>
+  <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.55">
+    <path d="M120 492 h96"/>
+    <path d="M300 520 h132"/>
+    <path d="M210 548 h80"/>
+    <path d="M470 500 h110"/>
+    <path d="M620 534 h96"/>
+  </g>
+  <!-- sailboat -->
+  <g transform="translate(210,452)">
+    <path d="M0 34 h74 l-11 15 H12 Z" fill="#2B2B33"/>
+    <path d="M34 0 L34 32 L6 32 Z" fill="#FFFFFF"/>
+    <path d="M40 4 L40 32 L66 32 Z" fill="#FFF6E0"/>
+  </g>
+
+  <!-- foreground land -->
+  <path d="M0 560 C 260 528, 470 552, 700 566 C 980 584, 1240 560, 1600 596 L1600 800 L0 800 Z"
+        fill="url(#land)"/>
+  <path d="M0 560 C 260 528, 470 552, 700 566 C 980 584, 1240 560, 1600 596"
+        stroke="#F3E6C2" stroke-width="6" fill="none" opacity="0.8"/>
+
+  <!-- winding coastal road -->
+  <path d="M120 820 C 320 726, 470 676, 660 654 C 880 629, 1010 596, 1160 566 C 1300 539, 1420 536, 1560 552"
+        stroke="#2B2B33" stroke-width="96" fill="none" stroke-linecap="round"/>
+  <path d="M120 820 C 320 726, 470 676, 660 654 C 880 629, 1010 596, 1160 566 C 1300 539, 1420 536, 1560 552"
+        stroke="#FFC800" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="38 34"/>
+
+  <!-- trees -->
+  <g>
+    <g transform="translate(1120,470)">
+      <rect x="-7" y="30" width="14" height="34" fill="#2B2B33"/>
+      <circle cx="0" cy="14" r="36" fill="#3A3A44"/>
+      <circle cx="-26" cy="30" r="24" fill="#33333C"/>
+      <circle cx="26" cy="30" r="24" fill="#33333C"/>
+    </g>
+    <g transform="translate(1330,506) scale(0.86)">
+      <rect x="-7" y="30" width="14" height="34" fill="#2B2B33"/>
+      <circle cx="0" cy="14" r="36" fill="#3A3A44"/>
+      <circle cx="-26" cy="30" r="24" fill="#33333C"/>
+      <circle cx="26" cy="30" r="24" fill="#33333C"/>
+    </g>
+    <g transform="translate(250,626) scale(1.05)">
+      <rect x="-7" y="30" width="14" height="34" fill="#2B2B33"/>
+      <circle cx="0" cy="14" r="36" fill="#3A3A44"/>
+      <circle cx="-26" cy="30" r="24" fill="#33333C"/>
+      <circle cx="26" cy="30" r="24" fill="#33333C"/>
+    </g>
+  </g>
+
+  <!-- car on the road (white, facing right) -->
+  <g transform="translate(556,588)">
+    <ellipse cx="76" cy="74" rx="86" ry="12" fill="#2B2B33" opacity="0.18"/>
+    <path d="M4 44 q2 -16 22 -20 l26 -16 q12 -8 34 -8 h22 q20 0 30 10 l24 14 q18 6 20 20 v10 q0 6 -8 6 H12 q-8 0 -8 -6 Z" fill="#FFFFFF"/>
+    <path d="M42 26 q8 -6 24 -6 h18 q14 0 22 8 l14 10 H34 Z" fill="#33333C"/>
+    <rect x="-2" y="46" width="152" height="4" fill="#FFC800"/>
+    <rect x="148" y="34" width="10" height="9" rx="3" fill="#FFC800"/>
+    <rect x="-4" y="40" width="9" height="10" rx="3" fill="#E24B3F"/>
+    <circle cx="38" cy="62" r="15" fill="#2B2B33"/>
+    <circle cx="38" cy="62" r="6" fill="#D9D9DE"/>
+    <circle cx="118" cy="62" r="15" fill="#2B2B33"/>
+    <circle cx="118" cy="62" r="6" fill="#D9D9DE"/>
+  </g>
+</svg>

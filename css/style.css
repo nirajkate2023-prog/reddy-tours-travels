@@ -478,8 +478,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(17, 17, 22, 0.84) 0%, rgba(17, 17, 22, 0.42) 42%, rgba(17, 17, 22, 0.9) 100%),
-    radial-gradient(120% 90% at 50% 0%, rgba(17, 17, 22, 0) 38%, rgba(17, 17, 22, 0.55) 100%);
+    linear-gradient(180deg, rgba(17, 17, 22, 0.74) 0%, rgba(17, 17, 22, 0.28) 44%, rgba(17, 17, 22, 0.86) 100%),
+    radial-gradient(120% 90% at 50% 0%, rgba(17, 17, 22, 0) 40%, rgba(17, 17, 22, 0.45) 100%);
 }
 
 .hero-container {
