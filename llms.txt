@@ -1,40 +1,68 @@
 # Reddy Tours & Travels
 
-> Maharashtra-based cab and car rental service offering Mumbai–Pune express cabs, All-India outstation taxis, local hourly packages, corporate employee transport, wedding fleets, and self-drive intercity cars. Zero surge pricing, sanitized AC vehicles, and police-verified chauffeurs.
+> Maharashtra-based cab and car rental service offering Mumbai–Pune express cabs, All-India outstation taxis, local hourly packages, corporate employee transport, wedding fleets, and self-drive cars & two-wheelers. Zero surge pricing, sanitized AC vehicles, and police-verified chauffeurs.
 
 ## Key facts
 
 - Business name: Reddy Tours & Travels
-- Service area: Maharashtra, India (Mumbai, Pune, Nashik, Thane, Navi Mumbai, Kolhapur, Solapur, Nagpur, Latur, Chhatrapati Sambhajinagar, Alibaug) plus pan-India outstation
+- Service area: Maharashtra, India (Mumbai, Pune, Nashik, Thane, Navi Mumbai, Kolhapur, Solapur, Nagpur, Latur, Chhatrapati Sambhajinagar, Ahmednagar/Ahilya Nagar, Alibaug) plus pan-India outstation
 - Phone / WhatsApp: +91 98600 13081
 - Email: booking@reddytourstravels.com
 - Hours: 24/7, all days
 - Payment: Cash, UPI, Bank Transfer; GST invoices available
 - Availability: 24x7 doorstep pickup, zero advance required for inquiries
 
+## Head offices
+
+- Navi Mumbai (Head Office): 403, 4th Floor, Mangalmurti Apt., Sector 36, CISF Road, Near Vitthal Mandir, Owe Gaon, Kharghar, Navi Mumbai – 410210
+- Pune Branch Office: Mudrika Niwas, 302, 3rd Floor, Charholi Phata, Taluka Haveli, Pune, Maharashtra – 412105 (near airport)
+
 ## Services
 
-- Mumbai–Pune Express Corridor: fixed-price one-way and round-trip cabs, toll-inclusive options, starting at ₹1,799.
-- All-India Outstation: All India Tourist Permit fleet, from ₹11/km (Sedan), ₹14/km (SUV), ₹18/km (Innova Crysta), ₹24/km (Tempo Traveller).
-- Local Hourly Packages: 8 hrs/80 km from ₹1,999, 10 hrs/100 km from ₹2,499, 12 hrs/120 km from ₹2,999 (fuel and driver included).
+- Mumbai–Pune Express Corridor: fixed-price one-way and round-trip cabs, toll-inclusive options, starting at ₹2,900.
+- All-India Outstation: All India Tourist Permit fleet, from ₹13/km (Swift Dzire), ₹16/km (Ertiga), ₹22/km (Innova), and Tempo Traveller from ₹24/km (17/20/25 seater, AC/Non-AC).
+- Local Hourly Packages (fuel and driver included): Swift Dzire 8 hrs/80 km ₹2,000, 10 hrs/100 km ₹2,500, 12 hrs/120 km ₹3,000; Ertiga 4 hrs/40 km ₹1,940, 8 hrs/80 km ₹3,200, 10 hrs/100 km ₹4,200, 12 hrs/120 km ₹5,100; Innova 8 hrs/80 km ₹4,000, 10 hrs/100 km ₹4,500, 12 hrs/120 km ₹5,700. Toll, parking and driver food extra.
 - Events & Weddings: decorated luxury groom/bridal cars and guest shuttle tempo travellers.
 - Corporate Employee Pick-Drop: monthly retainer contracts, centralized rosters, GST billing, background-checked drivers.
-- Self-Drive Intercity: cars without chauffeur, digital licence and Aadhaar verification, from ₹1,499/day.
+- Self-Drive: cars and two-wheelers without a chauffeur; 24 hrs / 350 km basis, ₹5/km (5 seater) and ₹7/km (7 seater) beyond 350 km, ₹150/hr beyond 24 hrs. Original Aadhaar, PAN and driving licence required at pick-up.
+
+## One-way route fares (Swift Dzire / Ertiga / Innova)
+
+- Mumbai–Pune: ₹2,900 / ₹3,700 / ₹5,500
+- Pune–Mumbai: ₹2,900 / ₹3,700 / ₹5,500
+- Mumbai–Nashik: ₹2,900 / ₹3,500 / ₹5,500
+- Nashik–Mumbai: ₹2,900 / ₹3,500 / ₹5,500
+- Nashik–Pune: ₹3,100 / ₹4,100 / ₹8,000
+- Pune–Nashik: ₹3,100 / ₹4,100 / on request
+- Pune–Sambhaji Nagar: ₹3,100 / ₹4,100 / ₹7,000
+- Mumbai–Sambhaji Nagar: ₹6,200 / ₹7,000 / ₹8,000
+- Mumbai–Ahilya Nagar: ₹5,800 / ₹6,000 / ₹8,000
+- Ahilya Nagar–Mumbai: ₹4,700 / ₹5,500 / on request
+- Pune–Kolhapur: ₹4,100 / ₹5,000 / ₹7,000
+- Mumbai–Kolhapur: ₹6,700 / ₹7,500 / ₹10,000
+- Mumbai–Shirdi: ₹4,400 / ₹5,500 / ₹8,000
+- Pune–Shirdi: ₹3,100 / ₹4,000 / on request
+- Mumbai–Mahabaleshwar: ₹6,500 / ₹7,500 / on request
+- Pune–Mahabaleshwar: ₹3,000 / ₹4,000 / on request
+- Mumbai–Alibaug: ₹2,900 / ₹3,700 / on request
+- Pune–Alibaug: ₹4,000 / ₹5,000 / on request
+- Mumbai–Lonavala: ₹2,800 / ₹4,000 / on request
 
 ## Fleet
 
-- Maruti Suzuki Dzire / Toyota Etios (4-seater sedan)
-- Maruti Ertiga / Kia Carens (6-seater SUV)
-- Toyota Innova Crysta / Hycross (7-seater luxury MPV)
-- Force Tempo Traveller (13 / 17 / 26 seater)
+- Swift Dzire (4-seater sedan)
+- Ertiga (6-seater SUV)
+- Innova (7-seater MPV)
+- Force Tempo Traveller (17 / 20 / 25 seater, AC and Non-AC)
+- Self-drive cars and two-wheelers
 
 ## Frequently asked questions
 
 - How does WhatsApp booking work? Select pickup and drop city, choose car and date, then click "Book on WhatsApp"; a coordinator confirms car and driver details immediately.
 - Are tolls and parking included? One-way Mumbai–Pune packages are toll-inclusive; outstation tolls and permits are billed at actual Fastag receipts.
 - Can I book multi-city outstation tours across India? Yes, All India Tourist Permit cabs are available for multi-day interstate tours.
-- How does Self-Drive work? Rent without a chauffeur after digital licence and Aadhaar verification; hub pickup or doorstep delivery.
-- What is the cost of a Mumbai to Pune cab? Sedan from ₹1,799, Premium SUV from about ₹2,599, Innova Crysta from about ₹3,499.
+- How does Self-Drive work? Rent a car or two-wheeler without a chauffeur on a 24 hrs / 350 km basis; original Aadhaar, PAN and driving licence required at pick-up.
+- What is the cost of a Mumbai to Pune cab? Swift Dzire ₹2,900, Ertiga ₹3,700, Innova ₹5,500 (one-way).
 
 ## Contact
 

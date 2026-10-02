@@ -107,36 +107,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const vehicle = document.getElementById('vehicleModel').value;
     const estPriceDisplay = document.getElementById('estPriceDisplay');
 
-    let estimateText = '₹1,799 - ₹2,499*';
+    let estimateText = '₹2,900 - ₹3,700*';
+
+    const isDzire = vehicle.includes('Dzire');
+    const isErtiga = vehicle.includes('Ertiga');
+    const isInnova = vehicle.includes('Innova');
+    const isTempo = vehicle.includes('Tempo');
+    const isTwoWheeler = vehicle.includes('Two Wheeler');
 
     if (serviceKey === 'mumbai-pune') {
-      if (vehicle.includes('Sedan')) estimateText = '₹1,799 - ₹2,199*';
-      else if (vehicle.includes('SUV')) estimateText = '₹2,599 - ₹2,999*';
-      else if (vehicle.includes('Innova')) estimateText = '₹3,499 - ₹3,999*';
-      else if (vehicle.includes('Hatchback')) estimateText = '₹1,699 - ₹1,899*';
-      else if (vehicle.includes('Tempo')) estimateText = '₹5,500 - ₹7,000*';
-      else estimateText = '₹1,800/day + fuel';
+      if (isDzire) estimateText = '₹2,900* (one-way)';
+      else if (isErtiga) estimateText = '₹3,700* (one-way)';
+      else if (isInnova) estimateText = '₹5,500* (one-way)';
+      else if (isTempo) estimateText = 'Call for group rate';
+      else estimateText = 'On request';
     } else if (serviceKey === 'local') {
       const pkg = document.getElementById('hourlyPackage').value;
-      if (pkg.includes('8 Hours')) {
-        estimateText = vehicle.includes('SUV') ? '₹2,699*' : '₹1,999*';
-      } else if (pkg.includes('10 Hours')) {
-        estimateText = vehicle.includes('SUV') ? '₹3,199*' : '₹2,499*';
-      } else if (pkg.includes('12 Hours')) {
-        estimateText = vehicle.includes('SUV') ? '₹3,699*' : '₹2,999*';
-      }
+      const isShort = pkg.includes('8 Hours');
+      const isMid = pkg.includes('10 Hours');
+      if (isDzire) estimateText = isShort ? '₹2,000*' : isMid ? '₹2,500*' : '₹3,000*';
+      else if (isErtiga) estimateText = isShort ? '₹3,200*' : isMid ? '₹4,200*' : '₹5,100*';
+      else if (isInnova) estimateText = isShort ? '₹4,000*' : isMid ? '₹4,500*' : '₹5,700*';
+      else estimateText = 'Custom package';
     } else if (serviceKey === 'outstation') {
-      if (vehicle.includes('Sedan')) estimateText = '₹11/km (Min 300km/day)';
-      else if (vehicle.includes('SUV')) estimateText = '₹14/km (Min 300km/day)';
-      else if (vehicle.includes('Innova')) estimateText = '₹18/km (Min 300km/day)';
-      else if (vehicle.includes('Tempo')) estimateText = '₹24/km (Min 300km/day)';
-      else estimateText = '₹11/km';
+      if (isDzire) estimateText = '₹13/km (Min 300km/day)';
+      else if (isErtiga) estimateText = '₹16/km (Min 300km/day)';
+      else if (isInnova) estimateText = '₹22/km (Min 300km/day)';
+      else if (isTempo) estimateText = '₹24/km onwards';
+      else estimateText = '₹13/km onwards';
     } else if (serviceKey === 'events') {
       estimateText = 'Custom Event Quote';
     } else if (serviceKey === 'corporate') {
       estimateText = 'Monthly Contract Rates';
     } else if (serviceKey === 'self-drive') {
-      estimateText = '₹1,499/day onwards';
+      estimateText = isTwoWheeler ? 'Two-wheeler — call for rate' : '24 hrs / 350 km — call for rate';
     }
 
     if (estPriceDisplay) {

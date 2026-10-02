@@ -1407,6 +1407,55 @@ body {
   gap: 10px;
 }
 
+/* Per-vehicle local package rate list */
+.pkg-rate-list {
+  list-style: none;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.pkg-rate-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pkg-rate-list li:last-child {
+  border-bottom: none;
+}
+
+.pkg-rate-list .rate-dur {
+  color: var(--text-body);
+  font-weight: 600;
+}
+
+.pkg-rate-list .rate-val {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--black-deep);
+  white-space: nowrap;
+}
+
+.pkg-rate-list li.featured-rate {
+  background: var(--yellow-light);
+}
+
+.pkg-footnote {
+  max-width: 820px;
+  margin: 24px auto 0;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
 .pkg-select-btn {
   margin-top: auto;
   display: block;
@@ -1433,6 +1482,118 @@ body {
 
 .pkg-select-btn.yellow-btn:hover {
   background: var(--yellow-hover);
+}
+
+/* ========================================================
+   RATE CARD (ONE-WAY + PER-KM)
+   ======================================================== */
+.rate-card-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.rate-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.rate-info-card {
+  background: var(--bg-soothing);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+}
+
+.rate-info-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--black-deep);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate-info-card .pkg-rate-list {
+  margin-bottom: 0;
+  background: #FFFFFF;
+}
+
+.rate-table-wrap {
+  background: var(--bg-soothing);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 4px;
+}
+
+.rate-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.rate-table th,
+.rate-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.rate-table th {
+  background: var(--black-deep);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+.rate-table td {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.rate-table td:nth-child(3),
+.rate-table td:nth-child(4),
+.rate-table td:nth-child(5) {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--black-deep);
+  white-space: nowrap;
+}
+
+.rate-table tbody tr:nth-child(even) {
+  background: var(--bg-alt);
+}
+
+.rate-table tbody tr:hover {
+  background: var(--yellow-light);
+}
+
+.rate-table td.na {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.rate-table-wrap .pkg-footnote {
+  text-align: left;
+  margin: 16px 0 0;
 }
 
 /* ========================================================
@@ -1629,6 +1790,132 @@ body {
 .car-book-btn:hover {
   background: var(--yellow-primary);
   color: var(--black-deep);
+}
+
+/* ========================================================
+   SELF-DRIVE & TWO-WHEELER
+   ======================================================== */
+.selfdrive-section {
+  padding: 80px 0;
+  background: var(--bg-soothing);
+}
+
+.selfdrive-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.selfdrive-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 30px 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.selfdrive-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--black-deep);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terms-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.terms-list li {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.terms-list li i {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.selfdrive-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.selfdrive-highlight {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.selfdrive-highlight i {
+  font-size: 1.6rem;
+  color: var(--black-deep);
+  flex-shrink: 0;
+}
+
+.selfdrive-highlight strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--black-deep);
+}
+
+.selfdrive-highlight span {
+  font-size: 0.84rem;
+  color: var(--text-body);
+}
+
+.selfdrive-side .corp-wa-btn {
+  justify-content: center;
+}
+
+/* Driver promise strip */
+.driver-promise-strip {
+  background: var(--black-deep);
+  padding: 26px 0;
+}
+
+.driver-promise-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.driver-promise-inner i {
+  font-size: 1.8rem;
+  color: var(--yellow-primary);
+}
+
+.driver-promise-inner p {
+  color: #FFFFFF;
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.driver-promise-inner p strong {
+  color: var(--yellow-primary);
 }
 
 /* ========================================================
@@ -2503,6 +2790,8 @@ body {
   .routes-cards-grid,
   .service-grid-boxes,
   .packages-comparison-grid,
+  .rate-cards-grid,
+  .selfdrive-grid,
   .fleet-grid,
   .benefits-grid,
   .reviews-grid {
@@ -2688,7 +2977,9 @@ select:focus-visible,
   .popular-routes-section,
   .services-catalog-section,
   .packages-detailed-section,
+  .rate-card-section,
   .fleet-showcase-section,
+  .selfdrive-section,
   .corporate-banner-section,
   .how-it-works-section,
   .why-choose-section,
