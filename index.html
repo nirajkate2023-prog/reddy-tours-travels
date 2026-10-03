@@ -51,7 +51,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
 
   <!-- Structured Data: Local Business, Services, Reviews & FAQ (SEO + AEO + GEO) -->
   <script type="application/ld+json">
@@ -80,6 +80,31 @@
           "postalCode": "410210",
           "addressCountry": "IN"
         },
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Pune Branch Office",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mudrika Niwas, 302, 3rd Floor, Charholi Phata, Taluka Haveli",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "postalCode": "412105",
+              "addressCountry": "IN"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Nashik Branch Office",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "103, First Floor, Shree Krushna Galaxy, Damodar Nagar, Pathardi Fata, Near New Durga Mandir",
+              "addressLocality": "Nashik",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          }
+        ],
         "areaServed": [
           { "@type": "State", "name": "Maharashtra" },
           { "@type": "City", "name": "Mumbai" },
@@ -1607,13 +1632,26 @@
       <div class="footer-col">
         <h4>Connect & Location</h4>
         <div class="footer-contact-items">
-          <div class="fc-item">
-            <i class="fa-solid fa-location-dot text-yellow"></i>
-            <span><strong>Head Office — Navi Mumbai:</strong> 403, 4th Floor, Mangalmurti Apt., Sector 36, CISF Road, Near Vitthal Mandir, Owe Gaon, Kharghar, Navi Mumbai – 410210</span>
+          <div class="loc-card">
+            <span class="loc-pin"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="loc-body">
+              <span class="loc-name">Navi Mumbai <em class="loc-tag">Head Office</em></span>
+              <span class="loc-addr">403, 4th Floor, Mangalmurti Apt., Sector 36, CISF Road, Near Vitthal Mandir, Owe Gaon, Kharghar, Navi Mumbai – 410210</span>
+            </div>
           </div>
-          <div class="fc-item">
-            <i class="fa-solid fa-location-dot text-yellow"></i>
-            <span><strong>Pune Branch Office:</strong> Mudrika Niwas, 302, 3rd Floor, Charholi Phata, Taluka Haveli, Pune, Maharashtra – 412105 (near airport)</span>
+          <div class="loc-card">
+            <span class="loc-pin"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="loc-body">
+              <span class="loc-name">Pune <em class="loc-tag">Branch</em></span>
+              <span class="loc-addr">Mudrika Niwas, 302, 3rd Floor, Charholi Phata, Taluka Haveli, Pune, Maharashtra – 412105 (near airport)</span>
+            </div>
+          </div>
+          <div class="loc-card">
+            <span class="loc-pin"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="loc-body">
+              <span class="loc-name">Nashik <em class="loc-tag">Branch</em></span>
+              <span class="loc-addr">103, First Floor, Shree Krushna Galaxy, Damodar Nagar, Pathardi Fata, Near New Durga Mandir, Nashik, Maharashtra</span>
+            </div>
           </div>
           <div class="fc-item">
             <i class="fa-solid fa-envelope text-yellow"></i>
