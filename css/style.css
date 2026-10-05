@@ -1,5 +1,5 @@
 /* ========================================================
-   REDDY TOURS & TRAVELS — MODERN REVV.CO.IN INSPIRED STYLES
+   REDDY TOURS & TRAVELS — MODERN CLEAN STYLES
    Color Theme: Yellow, White, Black (Soothing 2026 Aesthetic)
    Full Desktop, Tablet & Mobile Responsiveness
    ======================================================== */
@@ -161,9 +161,9 @@ body {
 }
 
 /* ========================================================
-   REVV-INSPIRED MAIN NAVBAR
+   MAIN NAVBAR
    ======================================================== */
-.revv-nav {
+.site-nav {
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.94);
@@ -174,7 +174,7 @@ body {
   transition: var(--transition);
 }
 
-.revv-nav.scrolled {
+.site-nav.scrolled {
   background: #FFFFFF;
   box-shadow: 0 8px 30px rgba(18, 18, 23, 0.08);
 }
@@ -450,9 +450,9 @@ body {
 }
 
 /* ========================================================
-   HERO & REVV BOOKING ENGINE
+   HERO & BOOKING ENGINE
    ======================================================== */
-.revv-hero {
+.hero-section {
   position: relative;
   padding: 0;
   background: var(--black-deep);
@@ -578,9 +578,9 @@ body {
 }
 
 /* ========================================================
-   REVV TABBED BOOKING ENGINE CARD
+   TABBED BOOKING ENGINE CARD
    ======================================================== */
-.revv-booking-card {
+.booking-card {
   background: #FFFFFF;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-light);
@@ -814,7 +814,7 @@ body {
 }
 
 /* Submit Button */
-.revv-submit-btn {
+.booking-submit-btn {
   background: var(--yellow-primary);
   color: var(--black-deep);
   font-family: var(--font-body);
@@ -832,7 +832,7 @@ body {
   flex-shrink: 0;
 }
 
-.revv-submit-btn:hover {
+.booking-submit-btn:hover {
   background: var(--yellow-hover);
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(255, 200, 0, 0.45);
@@ -2240,7 +2240,7 @@ body {
 }
 
 /* ========================================================
-   CORPORATE BANNER (REVV FOR BUSINESS STYLE)
+   CORPORATE BANNER
    ======================================================== */
 .corporate-banner-section {
   padding: 80px 0;
@@ -2392,7 +2392,7 @@ body {
 }
 
 /* ========================================================
-   HOW IT WORKS (REVV 3-STEPS)
+   HOW IT WORKS (3 STEPS)
    ======================================================== */
 .how-it-works-section {
   padding: 80px 0;
@@ -2753,9 +2753,9 @@ body {
 }
 
 /* ========================================================
-   FOOTER (REVV STYLE DARK & SOOTHING)
+   FOOTER (DARK & SOOTHING)
    ======================================================== */
-.revv-footer {
+.site-footer {
   background: #0D0D12;
   color: #A3A3B5;
   padding: 72px 0 0;
@@ -3146,7 +3146,7 @@ body {
   }
 
   /* Booking Widget */
-  .revv-booking-card {
+  .booking-card {
     padding: 16px;
     border-radius: var(--radius-md);
   }
@@ -3184,7 +3184,7 @@ body {
     text-align: center;
   }
 
-  .revv-submit-btn {
+  .booking-submit-btn {
     width: 100%;
     justify-content: center;
     padding: 14px;
@@ -3403,7 +3403,7 @@ select:focus-visible,
 
   .section-title-wrap { margin-bottom: 32px; }
 
-  .revv-footer { padding-top: 52px; }
+  .site-footer { padding-top: 52px; }
   .footer-grid { padding-bottom: 36px; }
 
   /* Announcement bar wraps neatly and stays centred */
@@ -3482,7 +3482,7 @@ select:focus-visible,
 @media (max-width: 360px) {
   .brand-name { font-size: 1.2rem; }
   .brand-caption { letter-spacing: 1.2px; }
-  .revv-submit-btn { font-size: 0.9rem; }
+  .booking-submit-btn { font-size: 0.9rem; }
   .cta-btn-primary,
   .cta-btn-wa { font-size: 0.88rem; }
 }
