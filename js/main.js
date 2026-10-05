@@ -1,6 +1,6 @@
 /* ========================================================
    REDDY TOURS & TRAVELS — INTERACTIVE JAVASCRIPT
-   Revv-Style Booking Engine, Fleet Filters, WhatsApp Connect
+   Booking Engine, Fleet Filters, WhatsApp Connect
    ======================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Tab Switching for Revv-Style Booking Engine
+  // 3. Tab Switching for Booking Engine
   const tabButtons = document.querySelectorAll('.booking-tabs .tab-btn');
   const selectedServiceInput = document.getElementById('selectedService');
   const dropCard = document.getElementById('dropCard');
