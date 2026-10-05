@@ -852,10 +852,10 @@ body {
 
 .booking-policy-note {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: 14px;
   padding: 11px 16px;
   background: var(--yellow-light);
@@ -865,6 +865,13 @@ body {
   font-weight: 700;
   color: var(--black-deep);
   text-align: center;
+}
+
+.booking-policy-note .policy-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .booking-policy-note i { font-size: 0.98rem; }
