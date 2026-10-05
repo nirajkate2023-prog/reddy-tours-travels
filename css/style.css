@@ -850,6 +850,27 @@ body {
   flex-wrap: wrap;
 }
 
+.booking-policy-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 11px 16px;
+  background: var(--yellow-light);
+  border: 1px dashed #E4C24A;
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--black-deep);
+  text-align: center;
+}
+
+.booking-policy-note i { font-size: 0.98rem; }
+
+.booking-policy-note strong { font-weight: 800; }
+
 .badge-item {
   display: flex;
   align-items: center;
