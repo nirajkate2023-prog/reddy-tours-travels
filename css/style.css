@@ -555,21 +555,14 @@ body {
 
 /* Horizontal Tabs Scroll */
 .booking-tabs-scroll {
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--border-light);
 }
 
-.booking-tabs-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 .booking-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  min-width: max-content;
 }
 
 .tab-btn {
