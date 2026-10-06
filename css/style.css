@@ -2797,6 +2797,7 @@ body {
 }
 
 .call-large {
+  display: block;
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 900;

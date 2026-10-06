@@ -7,6 +7,7 @@
 - Business name: Reddy Tours & Travels
 - Service area: Maharashtra, India (Mumbai, Pune, Nashik, Thane, Navi Mumbai, Kolhapur, Solapur, Nagpur, Latur, Chhatrapati Sambhajinagar, Ahmednagar/Ahilya Nagar, Alibaug) plus pan-India outstation
 - Phone / WhatsApp: +91 98600 13081
+- Phone (booking line 2): +91 93598 24549
 - Email: booking@reddytourstravels.com
 - Hours: 24/7, all days
 - Payment: Cash, UPI, Bank Transfer; GST invoices available
@@ -68,5 +69,5 @@
 ## Contact
 
 - Website: https://nirajkate2023-prog.github.io/reddy-tours-travels/
-- Phone: +91 98600 13081
+- Phone: +91 98600 13081 / +91 93598 24549
 - WhatsApp: https://wa.me/919860013081
