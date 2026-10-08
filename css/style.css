@@ -2226,6 +2226,182 @@ body {
 }
 
 /* ========================================================
+   BUS TICKET BOOKING & GROUP BUS HIRE
+   ======================================================== */
+.bus-hire-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.bus-hire-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--black-deep);
+  border-radius: var(--radius-xl);
+  padding: 46px 48px;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+}
+
+.bus-hire-card::after {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 200, 0, 0.14) 0%, rgba(255, 200, 0, 0) 70%);
+  top: -140px;
+  right: -80px;
+}
+
+.bus-hire-copy,
+.bus-hire-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.bus-hire-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 200, 0, 0.15);
+  color: var(--yellow-primary);
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+}
+
+.bus-hire-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.bus-hire-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--yellow-primary);
+  margin-bottom: 14px;
+}
+
+.bus-hire-desc {
+  font-size: 0.96rem;
+  color: #A3A3B5;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 640px;
+}
+
+.bus-type-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bus-type-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #E2E6EF;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+}
+
+.bus-type-chips li i {
+  color: var(--yellow-primary);
+}
+
+.bus-hire-cta-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 28px 26px;
+  text-align: center;
+}
+
+.bus-hire-cta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.bus-hire-cta-label i {
+  color: var(--yellow-primary);
+}
+
+.bus-hire-cta-note {
+  font-size: 0.85rem;
+  color: #A3A3B5;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.bus-hire-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 15px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  box-shadow: var(--shadow-yellow);
+  transition: var(--transition);
+}
+
+.bus-hire-book-btn:hover {
+  background: var(--yellow-hover);
+  transform: translateY(-2px);
+}
+
+.bus-hire-call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.bus-hire-call-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bus-hire-call-btn i {
+  color: var(--yellow-primary);
+}
+
+/* ========================================================
    CORPORATE BANNER
    ======================================================== */
 .corporate-banner-section {
@@ -3058,6 +3234,12 @@ body {
   .sd-facts {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .bus-hire-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 36px;
+  }
 }
 
 /* ========================================================
@@ -3398,12 +3580,22 @@ select:focus-visible,
   .rate-card-section,
   .fleet-showcase-section,
   .selfdrive-section,
+  .bus-hire-section,
   .corporate-banner-section,
   .how-it-works-section,
   .why-choose-section,
   .reviews-section,
   .faq-section {
     padding: 56px 0;
+  }
+
+  .bus-hire-card {
+    padding: 28px 24px;
+    border-radius: var(--radius-lg);
+  }
+
+  .bus-hire-cta-box {
+    padding: 24px 20px;
   }
 
   .section-title-wrap { margin-bottom: 32px; }
