@@ -253,13 +253,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeOffer = () => {
       offerModal.classList.remove('open');
       offerModal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
+      document.body.classList.remove('offer-open');
     };
 
     setTimeout(() => {
       offerModal.classList.add('open');
       offerModal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('offer-open');
     }, 900);
 
     document.getElementById('offerModalClose')?.addEventListener('click', closeOffer);

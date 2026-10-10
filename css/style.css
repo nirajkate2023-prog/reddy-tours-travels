@@ -3269,11 +3269,15 @@ body {
   display: flex;
 }
 
+/* Scroll lock lives in CSS so a stale stylesheet can never freeze the page */
+body.offer-open {
+  overflow: hidden;
+}
+
 .offer-modal-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(17, 17, 22, 0.62);
-  backdrop-filter: blur(2px);
 }
 
 .offer-modal-card {
