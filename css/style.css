@@ -2011,6 +2011,93 @@ body {
   letter-spacing: 0.3px;
 }
 
+/* Available self-drive cars */
+.sd-car-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+
+.sd-car-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.sd-car-card:hover {
+  transform: translateY(-6px);
+  border-color: #F0B800;
+  box-shadow: var(--shadow-card-hover);
+}
+
+.sd-car-rate {
+  margin-bottom: 14px;
+}
+
+.sd-car-rate .unit-label {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.sd-car-rate strong {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--black-deep);
+}
+
+.sd-car-rate strong small {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.sd-car-terms {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.sd-car-terms li {
+  display: flex;
+  gap: 9px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.sd-car-terms li i {
+  margin-top: 4px;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+}
+
+.sd-car-card .car-book-btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.sd-car-note {
+  margin-top: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
 /* Terms + side panel */
 .selfdrive-grid {
   display: grid;
@@ -3389,6 +3476,7 @@ body {
   .packages-comparison-grid,
   .rate-tiles,
   .selfdrive-grid,
+  .sd-car-grid,
   .fleet-grid,
   .benefits-grid,
   .reviews-grid {

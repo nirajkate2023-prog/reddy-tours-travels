@@ -1,6 +1,6 @@
 # Reddy Tours & Travels
 
-> Maharashtra-based cab and car rental service offering Mumbai–Pune express cabs, All-India outstation taxis, local hourly packages, corporate employee transport, wedding fleets, and self-drive cars & two-wheelers. Zero surge pricing, sanitized AC vehicles, and police-verified chauffeurs.
+> Maharashtra-based cab and car rental service offering Mumbai–Pune express cabs, All-India outstation taxis, local hourly packages, corporate employee transport, wedding fleets, and self-drive cars (Ertiga & Swift Dzire). Zero surge pricing, sanitized AC vehicles, and police-verified chauffeurs.
 
 ## Key facts
 
@@ -26,7 +26,7 @@
 - Local Hourly Packages (fuel and driver included): Swift Dzire 8 hrs/80 km ₹2,000, 10 hrs/100 km ₹2,500, 12 hrs/120 km ₹3,000; Ertiga 4 hrs/40 km ₹1,940, 8 hrs/80 km ₹3,200, 10 hrs/100 km ₹4,200, 12 hrs/120 km ₹5,100; Innova 8 hrs/80 km ₹4,000, 10 hrs/100 km ₹4,500, 12 hrs/120 km ₹5,700. Toll, parking and driver food extra.
 - Events & Weddings: decorated luxury groom/bridal cars and guest shuttle tempo travellers.
 - Corporate Employee Pick-Drop: monthly retainer contracts, centralized rosters, GST billing, background-checked drivers.
-- Self-Drive: cars and two-wheelers without a chauffeur; 24 hrs / 350 km basis, ₹5/km (5 seater) and ₹7/km (7 seater) beyond 350 km, ₹150/hr beyond 24 hrs. Original Aadhaar, PAN and driving licence required at pick-up.
+- Self-Drive (cars only): Maruti Ertiga ₹2,999 and Swift Dzire ₹2,499 for 24 hrs / 350 km; beyond 350 km ₹7/km (Ertiga, 7 seater) and ₹5/km (Swift Dzire, 5 seater); ₹150/hr beyond 24 hrs; ₹5,000 refundable deposit. Original Aadhaar, PAN and driving licence required at pick-up. All terms & conditions apply.
 
 ## One-way route fares (Swift Dzire / Ertiga / Innova)
 
@@ -56,14 +56,14 @@
 - Ertiga (6-seater SUV)
 - Innova (7-seater MPV)
 - Force Tempo Traveller (17 / 20 / 25 seater, AC and Non-AC)
-- Self-drive cars and two-wheelers
+- Self-drive cars (Ertiga & Swift Dzire)
 
 ## Frequently asked questions
 
 - How does WhatsApp booking work? Select pickup and drop city, choose car and date, then click "Book on WhatsApp"; a coordinator confirms car and driver details immediately.
 - Are tolls and parking included? One-way Mumbai–Pune packages are toll-inclusive; outstation tolls and permits are billed at actual Fastag receipts.
 - Can I book multi-city outstation tours across India? Yes, All India Tourist Permit cabs are available for multi-day interstate tours.
-- How does Self-Drive work? Rent a car or two-wheeler without a chauffeur on a 24 hrs / 350 km basis; original Aadhaar, PAN and driving licence required at pick-up.
+- How does Self-Drive work? Rent an Ertiga or Swift Dzire without a chauffeur on a 24 hrs / 350 km basis; original Aadhaar, PAN and driving licence required at pick-up.
 - What is the cost of a Mumbai to Pune cab? Swift Dzire ₹2,900, Ertiga ₹3,700, Innova ₹5,500 (one-way).
 
 ## Contact

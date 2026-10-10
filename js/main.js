@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const isErtiga = vehicle.includes('Ertiga');
     const isInnova = vehicle.includes('Innova');
     const isTempo = vehicle.includes('Tempo');
-    const isTwoWheeler = vehicle.includes('Two Wheeler');
 
     if (serviceKey === 'mumbai-pune') {
       if (isDzire) estimateText = '₹2,900* (one-way)';
@@ -140,7 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (serviceKey === 'corporate') {
       estimateText = 'Monthly Contract Rates';
     } else if (serviceKey === 'self-drive') {
-      estimateText = isTwoWheeler ? 'Two-wheeler — call for rate' : '24 hrs / 350 km — call for rate';
+      if (isErtiga) estimateText = '₹2,999 (24 hrs / 350 km)';
+      else if (isDzire) estimateText = '₹2,499 (24 hrs / 350 km)';
+      else estimateText = '24 hrs / 350 km — call for rate';
     }
 
     if (estPriceDisplay) {
