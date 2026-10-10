@@ -3253,6 +3253,202 @@ body {
 }
 
 /* ========================================================
+   OFFER POPUP BANNER
+   ======================================================== */
+.offer-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.offer-modal.open {
+  display: flex;
+}
+
+.offer-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 22, 0.62);
+  backdrop-filter: blur(2px);
+}
+
+.offer-modal-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background: var(--black-deep);
+  border: 1px solid rgba(255, 200, 0, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 30px 26px 24px;
+  box-shadow: var(--shadow-elevated);
+  animation: offerPop 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes offerPop {
+  from { opacity: 0; transform: translateY(18px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.offer-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.offer-modal-close:hover {
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  border-color: var(--yellow-primary);
+}
+
+.offer-modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 200, 0, 0.15);
+  color: var(--yellow-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+
+.offer-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  padding-right: 34px;
+}
+
+.offer-modal-sub {
+  font-size: 0.9rem;
+  color: #A3A3B5;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.offer-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.offer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  transition: var(--transition);
+}
+
+.offer-row:hover {
+  border-color: rgba(255, 200, 0, 0.35);
+}
+
+.offer-row-name {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.offer-row-route {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #A3A3B5;
+}
+
+.offer-row-price {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.offer-row-now {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.offer-row-off {
+  display: inline-block;
+  margin-top: 5px;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  padding: 2px 9px;
+  border-radius: var(--radius-pill);
+}
+
+.offer-modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  font-weight: 800;
+  font-size: 0.98rem;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.offer-modal-cta:hover {
+  background: var(--yellow-hover);
+  transform: translateY(-2px);
+}
+
+.offer-modal-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 14px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #8C8C9E;
+  text-align: center;
+}
+
+/* ========================================================
    TOAST POPUP
    ======================================================== */
 .toast-popup {
