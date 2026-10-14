@@ -4146,6 +4146,29 @@ select:focus-visible,
   border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
 }
 
+.nv-car-media {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nv-car-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.navratri-card:hover .nv-car-img {
+  transform: scale(1.06);
+}
+
 .nv-car-tag {
   align-self: flex-start;
   background: rgba(255, 200, 0, 0.15);
