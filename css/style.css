@@ -4009,3 +4009,290 @@ select:focus-visible,
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ========================================================
+   NAVRATRI SPECIAL OFFERS — BANNER · STICKER · FLICKER
+   Festive promo block that keeps the yellow / black theme
+   ======================================================== */
+.navratri-section {
+  padding: 72px 0;
+  background: linear-gradient(180deg, var(--bg-soothing) 0%, #FFF6DE 100%);
+}
+
+.navratri-banner {
+  position: relative;
+  background:
+    radial-gradient(120% 130% at 100% 0%, rgba(255, 200, 0, 0.22) 0%, rgba(255, 200, 0, 0) 55%),
+    linear-gradient(160deg, #1D1707 0%, var(--black-deep) 60%);
+  border: 1px solid rgba(255, 200, 0, 0.30);
+  border-radius: var(--radius-xl);
+  padding: 56px 40px 38px;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+}
+
+/* Rotated "sticker" badge ------------------------------- */
+.navratri-sticker {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  text-align: center;
+  line-height: 1.05;
+  transform: rotate(-12deg);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), inset 0 0 0 4px #FFFFFF, inset 0 0 0 7px var(--yellow-primary);
+  z-index: 3;
+  animation: nvSticker 3.6s ease-in-out infinite;
+}
+
+.nv-sticker-line {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.nv-sticker-big {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@keyframes nvSticker {
+  0%, 100% { transform: rotate(-12deg) scale(1); }
+  50% { transform: rotate(-12deg) scale(1.06); }
+}
+
+/* Heading block ----------------------------------------- */
+.navratri-head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 34px;
+}
+
+.navratri-badge {
+  background: rgba(255, 200, 0, 0.16);
+  color: var(--yellow-primary);
+}
+
+.navratri-heading {
+  color: #FFFFFF;
+}
+
+.navratri-desc {
+  color: #C9CBD6;
+}
+
+.navratri-desc strong {
+  color: #FFFFFF;
+}
+
+/* Flicker word (pulsing highlight) ---------------------- */
+.nv-flicker-word {
+  color: var(--yellow-primary);
+  animation: nvBlink 1.7s ease-in-out infinite;
+}
+
+@keyframes nvBlink {
+  0%, 100% { opacity: 1; text-shadow: 0 0 14px rgba(255, 200, 0, 0.55); }
+  50% { opacity: 0.55; text-shadow: none; }
+}
+
+/* Package cards ----------------------------------------- */
+.navratri-flicker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.navratri-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  animation: nvPulse 4.4s ease-in-out infinite;
+}
+
+.navratri-card:nth-child(2) {
+  animation-delay: 2.2s;
+}
+
+@keyframes nvPulse {
+  0%, 100% { border-color: rgba(255, 255, 255, 0.12); box-shadow: none; }
+  50% { border-color: rgba(255, 200, 0, 0.75); box-shadow: 0 0 30px rgba(255, 200, 0, 0.28); }
+}
+
+.nv-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
+}
+
+.nv-car-tag {
+  align-self: flex-start;
+  background: rgba(255, 200, 0, 0.15);
+  color: var(--yellow-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.nv-car-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.nv-car-sub {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #9A9AAB;
+}
+
+.nv-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.nv-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 11px 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nv-list li:last-child {
+  border-bottom: none;
+}
+
+.nv-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #E7E9F2;
+}
+
+.nv-price {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--yellow-primary);
+  white-space: nowrap;
+}
+
+.nv-book-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  font-weight: 800;
+  font-size: 0.92rem;
+  padding: 13px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.nv-book-btn:hover {
+  background: var(--yellow-hover);
+  transform: translateY(-2px);
+}
+
+.nv-book-btn i {
+  font-size: 1.05rem;
+}
+
+/* Contact strip ----------------------------------------- */
+.navratri-strip {
+  position: relative;
+  z-index: 1;
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #C9CBD6;
+}
+
+.navratri-strip i {
+  color: var(--yellow-primary);
+}
+
+.nv-dot {
+  color: rgba(255, 200, 0, 0.6);
+}
+
+/* Marathi text uses a Devanagari-capable font ----------- */
+.nv-mr {
+  font-family: 'Noto Sans Devanagari', var(--font-body);
+}
+
+/* Responsive -------------------------------------------- */
+@media (max-width: 768px) {
+  .navratri-section { padding: 52px 0; }
+
+  .navratri-banner {
+    padding: 60px 22px 30px;
+    border-radius: var(--radius-lg);
+  }
+
+  .navratri-flicker {
+    grid-template-columns: 1fr;
+  }
+
+  .navratri-sticker {
+    width: 88px;
+    height: 88px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .nv-sticker-big { font-size: 1rem; }
+  .nv-sticker-line { font-size: 0.52rem; }
+}
+
+@media (max-width: 480px) {
+  .navratri-heading { font-size: 1.5rem; }
+
+  .navratri-sticker {
+    width: 72px;
+    height: 72px;
+  }
+
+  .nv-sticker-big { font-size: 0.85rem; }
+  .nv-sticker-line { font-size: 0.44rem; }
+
+  .nv-name { font-size: 0.84rem; }
+}
