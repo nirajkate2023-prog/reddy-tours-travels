@@ -4357,12 +4357,12 @@ select:focus-visible,
 /* Vehicle image area */
 .tw-media {
   position: relative;
-  height: 270px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 18px;
-  background: linear-gradient(180deg, #F7F8FC 0%, #EDEFF6 100%);
+  background: #FFFFFF;
   border-bottom: 1px solid var(--border-light);
   overflow: hidden;
 }
@@ -4557,7 +4557,7 @@ select:focus-visible,
 
 /* Responsive */
 @media (max-width: 900px) {
-  .tw-media { height: 240px; }
+  .tw-media { height: 270px; }
   .tw-name { font-size: 1.3rem; }
 }
 
@@ -4569,7 +4569,7 @@ select:focus-visible,
     gap: 22px;
   }
 
-  .tw-media { height: 230px; }
+  .tw-media { height: 250px; }
 
   .tw-body { padding: 20px 20px 24px; }
 
@@ -4577,7 +4577,7 @@ select:focus-visible,
 }
 
 @media (max-width: 480px) {
-  .tw-media { height: 200px; padding: 14px; }
+  .tw-media { height: 210px; padding: 14px; }
   .tw-name { font-size: 1.2rem; }
   .tw-plans { gap: 8px; }
   .tw-plan-face { padding: 10px 12px; }
