@@ -247,31 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 8. Offer Popup Banner
-  const offerModal = document.getElementById('offerModal');
-  if (offerModal) {
-    const closeOffer = () => {
-      offerModal.classList.remove('open');
-      offerModal.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('offer-open');
-    };
-
-    setTimeout(() => {
-      offerModal.classList.add('open');
-      offerModal.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('offer-open');
-    }, 900);
-
-    document.getElementById('offerModalClose')?.addEventListener('click', closeOffer);
-    offerModal.querySelectorAll('[data-offer-close]').forEach(el => {
-      el.addEventListener('click', closeOffer);
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && offerModal.classList.contains('open')) closeOffer();
-    });
-  }
-
-  // 9. Toast Helper
+  // 8. Toast Helper
   function showToast(text) {
     const toast = document.getElementById('toastBox');
     const toastMsg = document.getElementById('toastMsg');
@@ -284,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 10. Bike & Scooty Rentals — selected duration builds the WhatsApp message
+  // 9. Bike & Scooty Rentals — selected duration builds the WhatsApp message
   const twoWheelerForms = document.querySelectorAll('.tw-card-form');
   twoWheelerForms.forEach(form => {
     const vehicle = form.getAttribute('data-vehicle');
