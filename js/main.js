@@ -284,6 +284,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // 10. Bike & Scooty Rentals — selected duration builds the WhatsApp message
+  const twoWheelerForms = document.querySelectorAll('.tw-card-form');
+  twoWheelerForms.forEach(form => {
+    const vehicle = form.getAttribute('data-vehicle');
+    const bookBtn = form.querySelector('.tw-book-btn');
+    const plans = form.querySelectorAll('.tw-plan-radio');
+
+    const updateBookingLink = () => {
+      const selected = form.querySelector('.tw-plan-radio:checked');
+      if (!selected || !bookBtn) return;
+
+      const duration = selected.getAttribute('data-duration');
+      const price = selected.getAttribute('data-price');
+      const message =
+        `Hi Reddy Tours & Travels, I want to book the ${vehicle} two-wheeler rental ` +
+        `for ${duration} at \u20B9${price}. Please confirm availability.`;
+
+      bookBtn.setAttribute('href', `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`);
+    };
+
+    plans.forEach(plan => plan.addEventListener('change', updateBookingLink));
+    updateBookingLink();
+  });
+
   // Initial estimate calculation
   calcEstimate();
 });

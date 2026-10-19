@@ -4319,3 +4319,268 @@ select:focus-visible,
 
   .nv-name { font-size: 0.84rem; }
 }
+
+/* ========================================================
+   BIKE & SCOOTY RENTALS — two-wheeler rental cards
+   Reuses the yellow / black system and .section-* headings
+   ======================================================== */
+.two-wheeler-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.tw-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.tw-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.tw-card:hover {
+  transform: translateY(-6px);
+  border-color: #F0B800;
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Vehicle image area */
+.tw-media {
+  position: relative;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: linear-gradient(180deg, #F7F8FC 0%, #EDEFF6 100%);
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.tw-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  transition: transform 0.5s ease;
+}
+
+.tw-card:hover .tw-img {
+  transform: scale(1.05);
+}
+
+.tw-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--black-deep);
+  color: var(--yellow-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: var(--radius-pill);
+}
+
+/* Card body */
+.tw-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px 24px 26px;
+}
+
+.tw-name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--black-deep);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.tw-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 18px;
+}
+
+.tw-specs span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-body);
+}
+
+.tw-specs i { font-size: 0.82rem; }
+
+/* Pricing grid — all four durations stay visible (no hover reveal) */
+.tw-plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tw-plan {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.tw-plan-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.tw-plan-face {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: var(--bg-soothing);
+  transition: var(--transition);
+}
+
+.tw-plan:hover .tw-plan-face {
+  border-color: var(--yellow-primary);
+  background: var(--yellow-light);
+}
+
+.tw-plan-radio:checked + .tw-plan-face {
+  border-color: var(--yellow-primary);
+  background: var(--yellow-light);
+  box-shadow: 0 0 0 2px var(--yellow-primary) inset;
+}
+
+.tw-plan-radio:focus-visible + .tw-plan-face {
+  outline: 3px solid var(--yellow-primary);
+  outline-offset: 2px;
+}
+
+.tw-plan-dur {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.tw-plan-price {
+  font-family: var(--font-heading);
+  font-size: 1.18rem;
+  font-weight: 900;
+  color: var(--black-deep);
+  line-height: 1.1;
+}
+
+/* Booking CTA */
+.tw-book-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--yellow-primary);
+  color: var(--black-deep);
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  box-shadow: var(--shadow-yellow);
+  transition: var(--transition);
+}
+
+.tw-book-btn i { font-size: 1.05rem; }
+
+.tw-book-btn:hover {
+  background: var(--yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 200, 0, 0.45);
+}
+
+.tw-footnote {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 0.84rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.tw-footnote a {
+  color: var(--black-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow-primary);
+  text-underline-offset: 2px;
+}
+
+.tw-footnote a:hover { color: var(--yellow-hover); }
+
+.tw-credit {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tw-media { height: 240px; }
+  .tw-name { font-size: 1.3rem; }
+}
+
+@media (max-width: 768px) {
+  .two-wheeler-section { padding: 56px 0; }
+
+  .tw-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .tw-media { height: 230px; }
+
+  .tw-body { padding: 20px 20px 24px; }
+
+  .tw-book-btn { min-height: 48px; }
+}
+
+@media (max-width: 480px) {
+  .tw-media { height: 200px; padding: 14px; }
+  .tw-name { font-size: 1.2rem; }
+  .tw-plans { gap: 8px; }
+  .tw-plan-face { padding: 10px 12px; }
+  .tw-plan-price { font-size: 1.05rem; }
+  .tw-plan-dur { font-size: 0.66rem; }
+}
