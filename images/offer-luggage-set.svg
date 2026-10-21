@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" width="320" height="210" fill="none" role="img" aria-label="Free family, medium and small trolley bag set">
+  <defs>
+    <linearGradient id="lgSet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD94D"/>
+      <stop offset="1" stop-color="#FFC800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- handles (drawn first so the bags overlap them) -->
+  <rect x="60" y="50" width="48" height="28" rx="14" stroke="#111116" stroke-width="5"/>
+  <rect x="158" y="68" width="42" height="26" rx="13" stroke="#111116" stroke-width="5"/>
+  <rect x="246" y="86" width="26" height="24" rx="12" stroke="#111116" stroke-width="5"/>
+
+  <!-- family (large) bag -->
+  <rect x="36" y="66" width="96" height="110" rx="16" fill="url(#lgSet)" stroke="#111116" stroke-width="4"/>
+  <path d="M36 98 H132" stroke="#111116" stroke-width="3" opacity="0.35"/>
+
+  <!-- medium bag -->
+  <rect x="140" y="84" width="78" height="92" rx="14" fill="url(#lgSet)" stroke="#111116" stroke-width="4"/>
+  <path d="M140 114 H218" stroke="#111116" stroke-width="3" opacity="0.35"/>
+
+  <!-- small bag -->
+  <rect x="226" y="100" width="64" height="76" rx="12" fill="#111116"/>
+  <path d="M240 138 H276" stroke="#FFC800" stroke-width="4" opacity="0.6"/>
+</svg>

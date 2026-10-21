@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" width="320" height="210" fill="none" role="img" aria-label="Free set of six drinking glasses">
+  <defs>
+    <linearGradient id="gsFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD94D"/>
+      <stop offset="1" stop-color="#FFC800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- back row -->
+  <g stroke="#111116" stroke-width="4" stroke-linejoin="round">
+    <path d="M87 64 H121 L115 116 H93 Z" fill="#FFE58A"/>
+    <path d="M143 64 H177 L171 116 H149 Z" fill="#FFE58A"/>
+    <path d="M199 64 H233 L227 116 H205 Z" fill="#FFE58A"/>
+  </g>
+
+  <!-- front row -->
+  <g stroke="#111116" stroke-width="4" stroke-linejoin="round">
+    <path d="M63 92 H97 L91 152 H69 Z" fill="url(#gsFront)"/>
+    <path d="M133 92 H167 L161 152 H139 Z" fill="url(#gsFront)"/>
+    <path d="M203 92 H237 L231 152 H209 Z" fill="url(#gsFront)"/>
+  </g>
+
+  <!-- subtle highlights -->
+  <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M74 102 L72 138 M144 102 L142 138 M214 102 L212 138"/>
+  </g>
+</svg>

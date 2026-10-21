@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" width="320" height="210" fill="none" role="img" aria-label="Free trolley bag travel gift">
+  <defs>
+    <linearGradient id="tbgBag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD94D"/>
+      <stop offset="1" stop-color="#FFC800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- handle -->
+  <rect x="122" y="24" width="9" height="60" rx="4.5" fill="#111116"/>
+  <rect x="189" y="24" width="9" height="60" rx="4.5" fill="#111116"/>
+  <rect x="120" y="16" width="80" height="12" rx="6" fill="#111116"/>
+
+  <!-- body -->
+  <rect x="88" y="72" width="144" height="102" rx="18" fill="url(#tbgBag)" stroke="#111116" stroke-width="4"/>
+
+  <!-- front pocket + zip -->
+  <rect x="106" y="92" width="108" height="62" rx="12" fill="#111116" opacity="0.10"/>
+  <path d="M106 92 H214" stroke="#111116" stroke-width="4" opacity="0.55"/>
+  <rect x="146" y="106" width="28" height="18" rx="4" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- side stripes -->
+  <path d="M126 76 V170 M194 76 V170" stroke="#111116" stroke-width="3" opacity="0.18"/>
+
+  <!-- wheels -->
+  <circle cx="116" cy="181" r="11" fill="#111116"/>
+  <circle cx="204" cy="181" r="11" fill="#111116"/>
+</svg>
