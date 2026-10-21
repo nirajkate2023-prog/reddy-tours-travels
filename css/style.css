@@ -3811,15 +3811,15 @@ select:focus-visible,
 }
 
 /* ========================================================
-   NAVRATRI SPECIAL OFFERS — BANNER · STICKER · FLICKER
+   BOOKING OFFERS & REWARDS — OFFER A · B · C + REFERRAL
    Festive promo block that keeps the yellow / black theme
    ======================================================== */
-.navratri-section {
+.offers-section {
   padding: 72px 0;
   background: linear-gradient(180deg, var(--bg-soothing) 0%, #FFF6DE 100%);
 }
 
-.navratri-banner {
+.offers-banner {
   position: relative;
   background:
     radial-gradient(120% 130% at 100% 0%, rgba(255, 200, 0, 0.22) 0%, rgba(255, 200, 0, 0) 55%),
@@ -3832,7 +3832,7 @@ select:focus-visible,
 }
 
 /* Rotated "sticker" badge ------------------------------- */
-.navratri-sticker {
+.offers-sticker {
   position: absolute;
   top: 22px;
   right: 24px;
@@ -3851,113 +3851,102 @@ select:focus-visible,
   transform: rotate(-12deg);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), inset 0 0 0 4px #FFFFFF, inset 0 0 0 7px var(--yellow-primary);
   z-index: 3;
-  animation: nvSticker 3.6s ease-in-out infinite;
+  animation: ofSticker 3.6s ease-in-out infinite;
 }
 
-.nv-sticker-line {
+.of-sticker-line {
   font-size: 0.6rem;
   font-weight: 800;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
-.nv-sticker-big {
+.of-sticker-big {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1;
 }
 
-@keyframes nvSticker {
+@keyframes ofSticker {
   0%, 100% { transform: rotate(-12deg) scale(1); }
   50% { transform: rotate(-12deg) scale(1.06); }
 }
 
 /* Heading block ----------------------------------------- */
-.navratri-head {
+.offers-head {
   position: relative;
   z-index: 1;
   text-align: center;
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto 34px;
 }
 
-.navratri-badge {
+.offers-badge {
   background: rgba(255, 200, 0, 0.16);
   color: var(--yellow-primary);
 }
 
-.navratri-heading {
+.offers-heading {
   color: #FFFFFF;
 }
 
-.navratri-desc {
+.offers-desc {
   color: #C9CBD6;
 }
 
-.navratri-desc strong {
+.offers-desc strong {
   color: #FFFFFF;
 }
 
 /* Flicker word (pulsing highlight) ---------------------- */
-.nv-flicker-word {
+.of-flicker-word {
   color: var(--yellow-primary);
-  animation: nvBlink 1.7s ease-in-out infinite;
+  animation: ofBlink 1.7s ease-in-out infinite;
 }
 
-@keyframes nvBlink {
+@keyframes ofBlink {
   0%, 100% { opacity: 1; text-shadow: 0 0 14px rgba(255, 200, 0, 0.55); }
   50% { opacity: 0.55; text-shadow: none; }
 }
 
-/* Package cards ----------------------------------------- */
-.navratri-flicker {
+/* Offers grid ------------------------------------------- */
+.offers-grid {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
 }
 
-.navratri-card {
+.offer-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1.5px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
-  padding: 24px 22px;
+  padding: 22px 20px;
   display: flex;
   flex-direction: column;
-  animation: nvPulse 4.4s ease-in-out infinite;
+  transition: var(--transition);
 }
 
-.navratri-card:nth-child(2) {
-  animation-delay: 2.2s;
+.offer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 200, 0, 0.75);
+  box-shadow: 0 0 30px rgba(255, 200, 0, 0.25);
 }
 
-@keyframes nvPulse {
-  0%, 100% { border-color: rgba(255, 255, 255, 0.12); box-shadow: none; }
-  50% { border-color: rgba(255, 200, 0, 0.75); box-shadow: 0 0 30px rgba(255, 200, 0, 0.28); }
-}
-
-.nv-card-top {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
-}
-
-.nv-car-media {
+/* Media (image or icon) --------------------------------- */
+.offer-media {
   background: #FFFFFF;
   border-radius: var(--radius-md);
   padding: 10px 14px;
-  margin-bottom: 14px;
-  height: 122px;
+  height: 104px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nv-car-img {
+.offer-car-img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -3965,69 +3954,79 @@ select:focus-visible,
   transition: transform 0.5s ease;
 }
 
-.navratri-card:hover .nv-car-img {
+.offer-card:hover .offer-car-img {
   transform: scale(1.06);
 }
 
-.nv-car-tag {
+.offer-media-icon {
+  background: transparent;
+  padding: 0;
+}
+
+.of-icon-badge {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: linear-gradient(150deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+  color: var(--black-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  box-shadow: 0 10px 26px rgba(255, 200, 0, 0.35);
+}
+
+.of-tag {
   align-self: flex-start;
   background: rgba(255, 200, 0, 0.15);
   color: var(--yellow-primary);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.4px;
-  padding: 3px 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 11px;
   border-radius: var(--radius-pill);
+  margin-bottom: 10px;
 }
 
-.nv-car-name {
+.of-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.18rem;
   font-weight: 900;
   color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 12px;
 }
 
-.nv-car-sub {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #9A9AAB;
-}
-
-.nv-list {
+.of-list {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-.nv-list li {
+.of-list li {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 11px 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-}
-
-.nv-list li:last-child {
-  border-bottom: none;
-}
-
-.nv-name {
-  font-size: 0.9rem;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.87rem;
   font-weight: 600;
   color: #E7E9F2;
+  line-height: 1.45;
 }
 
-.nv-price {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 900;
+.of-list li i {
   color: var(--yellow-primary);
-  white-space: nowrap;
+  margin-top: 3px;
+  flex-shrink: 0;
 }
 
-.nv-book-btn {
+.of-list li strong {
+  color: #FFFFFF;
+}
+
+.of-btn {
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -4036,27 +4035,42 @@ select:focus-visible,
   background: var(--yellow-primary);
   color: var(--black-deep);
   font-weight: 800;
-  font-size: 0.92rem;
-  padding: 13px;
+  font-size: 0.9rem;
+  padding: 12px;
   border-radius: var(--radius-md);
   text-decoration: none;
   transition: var(--transition);
 }
 
-.nv-book-btn:hover {
+.of-btn:hover {
   background: var(--yellow-hover);
   transform: translateY(-2px);
 }
 
-.nv-book-btn i {
+.of-btn i {
   font-size: 1.05rem;
 }
 
-/* Contact strip ----------------------------------------- */
-.navratri-strip {
+/* Terms note + contact strip ---------------------------- */
+.offers-note {
   position: relative;
   z-index: 1;
-  margin-top: 26px;
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #9A9AAB;
+}
+
+.offers-note i {
+  color: var(--yellow-primary);
+  margin-right: 4px;
+}
+
+.offers-strip {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -4069,55 +4083,59 @@ select:focus-visible,
   color: #C9CBD6;
 }
 
-.navratri-strip i {
+.offers-strip i {
   color: var(--yellow-primary);
 }
 
-.nv-dot {
+.of-dot {
   color: rgba(255, 200, 0, 0.6);
 }
 
 /* Marathi text uses a Devanagari-capable font ----------- */
-.nv-mr {
+.of-mr {
   font-family: 'Noto Sans Devanagari', var(--font-body);
 }
 
 /* Responsive -------------------------------------------- */
-@media (max-width: 768px) {
-  .navratri-section { padding: 52px 0; }
+@media (max-width: 1080px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
-  .navratri-banner {
+@media (max-width: 768px) {
+  .offers-section { padding: 52px 0; }
+
+  .offers-banner {
     padding: 60px 22px 30px;
     border-radius: var(--radius-lg);
   }
 
-  .navratri-flicker {
-    grid-template-columns: 1fr;
-  }
-
-  .navratri-sticker {
+  .offers-sticker {
     width: 88px;
     height: 88px;
     top: 16px;
     right: 16px;
   }
 
-  .nv-sticker-big { font-size: 1rem; }
-  .nv-sticker-line { font-size: 0.52rem; }
+  .of-sticker-big { font-size: 1rem; }
+  .of-sticker-line { font-size: 0.52rem; }
 }
 
-@media (max-width: 480px) {
-  .navratri-heading { font-size: 1.5rem; }
+@media (max-width: 560px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .navratri-sticker {
+  .offers-heading { font-size: 1.5rem; }
+
+  .offers-sticker {
     width: 72px;
     height: 72px;
   }
 
-  .nv-sticker-big { font-size: 0.85rem; }
-  .nv-sticker-line { font-size: 0.44rem; }
-
-  .nv-name { font-size: 0.84rem; }
+  .of-sticker-big { font-size: 0.85rem; }
+  .of-sticker-line { font-size: 0.44rem; }
 }
 
 /* ========================================================
