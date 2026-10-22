@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-label="Ashtavinayak yatra temple illustration with eight temple stops">
+  <defs>
+    <linearGradient id="asBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241B09"/>
+      <stop offset="1" stop-color="#111116"/>
+    </linearGradient>
+    <radialGradient id="asGlow" cx="0.5" cy="0.4" r="0.62">
+      <stop offset="0" stop-color="#FFC800" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFC800" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="asTemple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE58A"/>
+      <stop offset="1" stop-color="#FFC800"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="340" rx="20" fill="url(#asBg)"/>
+  <rect x="0" y="0" width="640" height="340" rx="20" fill="url(#asGlow)"/>
+  <rect x="0.75" y="0.75" width="638.5" height="338.5" rx="20" fill="none" stroke="#FFC800" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <!-- sparkles -->
+  <g fill="#FFD94D" opacity="0.55">
+    <path d="M96 74 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z"/>
+    <path d="M548 96 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+    <circle cx="112" cy="150" r="3"/>
+    <circle cx="534" cy="168" r="3"/>
+  </g>
+
+  <!-- temple -->
+  <g>
+    <rect x="317" y="96" width="6" height="28" rx="3" fill="#FFD94D"/>
+    <circle cx="320" cy="92" r="10" fill="#FFD94D"/>
+    <path d="M330 102 L374 114 L330 126 Z" fill="#FF7A1A"/>
+
+    <path d="M234 246 Q236 152 320 122 Q404 152 406 246 Z" fill="url(#asTemple)"/>
+    <path d="M246 206 Q320 182 394 206" stroke="#C99A00" stroke-width="3" fill="none" opacity="0.45"/>
+    <path d="M252 228 Q320 206 388 228" stroke="#C99A00" stroke-width="3" fill="none" opacity="0.35"/>
+
+    <path d="M296 246 L296 208 Q320 190 344 208 L344 246 Z" fill="#1D1707"/>
+    <path d="M320 128 L320 176" stroke="#C99A00" stroke-width="2.5" opacity="0.35"/>
+
+    <rect x="216" y="246" width="208" height="16" rx="6" fill="#FFD94D"/>
+    <rect x="196" y="262" width="248" height="14" rx="6" fill="#FFC800"/>
+  </g>
+
+  <!-- eight temple stops -->
+  <line x1="72" y1="300" x2="568" y2="300" stroke="#FFC800" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.55"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <circle cx="72"  cy="300" r="13" fill="#FFC800"/><text x="72"  y="304" fill="#111116">1</text>
+    <circle cx="143" cy="300" r="13" fill="#FFC800"/><text x="143" y="304" fill="#111116">2</text>
+    <circle cx="214" cy="300" r="13" fill="#FFC800"/><text x="214" y="304" fill="#111116">3</text>
+    <circle cx="285" cy="300" r="13" fill="#FFC800"/><text x="285" y="304" fill="#111116">4</text>
+    <circle cx="356" cy="300" r="13" fill="#FFC800"/><text x="356" y="304" fill="#111116">5</text>
+    <circle cx="426" cy="300" r="13" fill="#FFC800"/><text x="426" y="304" fill="#111116">6</text>
+    <circle cx="497" cy="300" r="13" fill="#FFC800"/><text x="497" y="304" fill="#111116">7</text>
+    <circle cx="568" cy="300" r="13" fill="#FFC800"/><text x="568" y="304" fill="#111116">8</text>
+  </g>
+</svg>
