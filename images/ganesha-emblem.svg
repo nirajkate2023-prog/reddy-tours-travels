@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Lord Ganesha emblem">
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#FFC800" stroke-width="3" opacity="0.45"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#FFC800" stroke-width="1.5" opacity="0.22"/>
+
+  <g transform="translate(100,100) scale(0.76) translate(-100,-100)">
+    <g fill="none" stroke="#FFC800" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M100 32 L83 74 H117 Z"/>
+      <path d="M95 74 H105"/>
+
+      <path d="M100 72 C 131 62, 163 80, 171 108 C 179 136, 155 162, 124 155 C 110 152, 102 144, 98 134"/>
+      <path d="M100 72 C 69 62, 37 80, 29 108 C 21 136, 45 162, 76 155 C 90 152, 98 144, 102 134"/>
+
+      <path d="M100 116 C 104 140, 98 156, 86 166 C 76 174, 62 168, 66 156"/>
+    </g>
+    <circle cx="86" cy="108" r="6" fill="#FFC800"/>
+    <circle cx="114" cy="108" r="6" fill="#FFC800"/>
+    <circle cx="52" cy="174" r="10" fill="#FFC800"/>
+  </g>
+</svg>

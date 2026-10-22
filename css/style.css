@@ -4154,6 +4154,14 @@ select:focus-visible,
   margin: 0 auto 36px;
 }
 
+.asht-ganesha {
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 16px;
+  filter: drop-shadow(0 8px 22px rgba(255, 200, 0, 0.28));
+}
+
 .asht-badge {
   background: rgba(255, 200, 0, 0.16);
   color: var(--yellow-primary);
