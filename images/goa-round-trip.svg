@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-label="Goa round trip sea, sunset and palm tree illustration">
+  <defs>
+    <linearGradient id="goBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241B09"/>
+      <stop offset="1" stop-color="#111116"/>
+    </linearGradient>
+    <radialGradient id="goGlow" cx="0.5" cy="0.4" r="0.62">
+      <stop offset="0" stop-color="#FFC800" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFC800" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goSun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE58A"/>
+      <stop offset="1" stop-color="#FFC800"/>
+    </linearGradient>
+    <linearGradient id="goSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC800" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFC800" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="340" rx="20" fill="url(#goBg)"/>
+  <rect x="0" y="0" width="640" height="340" rx="20" fill="url(#goGlow)"/>
+  <rect x="0.75" y="0.75" width="638.5" height="338.5" rx="20" fill="none" stroke="#FFC800" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <!-- sparkles -->
+  <g fill="#FFD94D" opacity="0.55">
+    <path d="M96 74 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z"/>
+    <path d="M548 96 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+    <circle cx="112" cy="150" r="3"/>
+    <circle cx="534" cy="168" r="3"/>
+  </g>
+
+  <!-- sun over the sea -->
+  <circle cx="466" cy="150" r="66" fill="#FFC800" opacity="0.12"/>
+  <circle cx="466" cy="150" r="42" fill="url(#goSun)"/>
+
+  <!-- sea -->
+  <path d="M56 230 Q320 208 584 230 L584 286 Q320 302 56 286 Z" fill="url(#goSea)"/>
+  <g stroke="#FFC800" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M126 250 q22 -9 44 0"/>
+    <path d="M242 262 q22 -9 44 0"/>
+    <path d="M366 246 q22 -9 44 0"/>
+    <path d="M478 262 q22 -9 44 0"/>
+  </g>
+
+  <!-- beach -->
+  <path d="M56 284 Q320 266 584 284 L584 320 Q320 334 56 320 Z" fill="#FFD94D" opacity="0.3"/>
+
+  <!-- dashed travel line -->
+  <path d="M64 322 Q320 300 576 322" stroke="#FFC800" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.5" fill="none"/>
+
+  <!-- palm tree -->
+  <g transform="translate(146,290)">
+    <path d="M-4 0 Q4 -64 16 -116" stroke="#E0A800" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <g transform="translate(16,-118)">
+      <path d="M0 0 Q-34 -22 -72 -14 Q-36 -4 0 0 Z" fill="#FFC800"/>
+      <path d="M0 0 Q-26 -40 -58 -52 Q-30 -26 0 0 Z" fill="#FFD94D"/>
+      <path d="M0 0 Q24 -40 58 -50 Q28 -24 0 0 Z" fill="#FFC800"/>
+      <path d="M0 0 Q40 -18 76 -8 Q40 0 0 0 Z" fill="#FFD94D"/>
+      <path d="M0 0 Q-6 -42 -2 -70 Q10 -38 0 0 Z" fill="#FFC800"/>
+      <circle cx="0" cy="0" r="7" fill="#FFE58A"/>
+    </g>
+  </g>
+
+  <!-- smaller palm tree -->
+  <g transform="translate(242,300) scale(0.62)">
+    <path d="M-4 0 Q4 -64 16 -116" stroke="#E0A800" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <g transform="translate(16,-118)">
+      <path d="M0 0 Q-34 -22 -72 -14 Q-36 -4 0 0 Z" fill="#FFC800"/>
+      <path d="M0 0 Q-26 -40 -58 -52 Q-30 -26 0 0 Z" fill="#FFD94D"/>
+      <path d="M0 0 Q24 -40 58 -50 Q28 -24 0 0 Z" fill="#FFC800"/>
+      <path d="M0 0 Q40 -18 76 -8 Q40 0 0 0 Z" fill="#FFD94D"/>
+      <path d="M0 0 Q-6 -42 -2 -70 Q10 -38 0 0 Z" fill="#FFC800"/>
+      <circle cx="0" cy="0" r="8" fill="#FFE58A"/>
+    </g>
+  </g>
+</svg>

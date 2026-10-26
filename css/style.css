@@ -4125,7 +4125,7 @@ select:focus-visible,
 }
 
 /* ========================================================
-   ASHTAVINAYAK YATRA PACKAGES — 2 & 3 day return trips
+   DIWALI OFFER — Ashtavinayak yatra (2 & 3 day) + Goa round trip
    Reuses the yellow / black theme, the .section-* headings
    and the .of-* helpers from the booking offers block.
    ======================================================== */
@@ -4183,7 +4183,7 @@ select:focus-visible,
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -4388,6 +4388,12 @@ select:focus-visible,
 }
 
 /* Responsive -------------------------------------------- */
+@media (max-width: 1080px) {
+  .asht-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 900px) {
   .asht-grid {
     grid-template-columns: 1fr;
